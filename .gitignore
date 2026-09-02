@@ -1,0 +1,14 @@
+# OS cruft
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+
+# Never commit source material or business data — those live in Google Drive
+# and Smartsheet. This repo holds documentation only.
+*.csv
+*.xlsx
+*.pdf
