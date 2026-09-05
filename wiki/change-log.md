@@ -107,6 +107,117 @@ remains in the sheet for this code.
 - The Budget sheet is now very large (~380+ rows) — consider whether a periodic
   cleanup/audit pass is worthwhile once this project nears completion.
 
+## [2026-09-05] — Bank data processed; company identity correction; solvency and cash analysis
+
+Covers work carried out 2 to 5 September 2026. No invoice processing and no Smartsheet
+writes were made in this period.
+
+**Raw processed:**
+
+- `Raw/Finance` — three HSBC account 04212819 statement CSVs (20260621, 20260721,
+  20260821), covering 22 May to 21 August 2026. Every transaction categorised, and the
+  categorisation reconciled against the printed statement balances so nothing was missed.
+- `Raw/application-pdf.pdf` — Companies House certificate of incorporation on change of
+  name, company 07948220. Read and acted on; see finding 1.
+- **Still unprocessed:** the remaining three Finance CSVs (20260321, 20260421, 20260521),
+  covering 22 February to 21 May 2026.
+
+**Classifier changes:** none.
+
+**Budget changes:** none.
+
+**Wiki changes:** none in Drive. Separately, the five Wiki articles were mirrored into this
+repository on 2026-09-02. Drive remains the working copy; this repo is a mirror and must be
+updated in the same session as any Drive edit.
+
+### Findings
+
+**1. "Fishbone Drylining" credits are this company paying itself, not sales.**
+Companies House confirms company 07948220 changed its name from FISHBONE DRYLINING LTD. to
+FISHBONE CONSTRUCTION LTD. on 31 October 2024. Bank credits described as "Fishbone Drylining
+FC2603 / FC2505 / FC2522 / FC2605 / FLEXIPAY" are therefore not receipts from a related
+company — they are this company drawing down its own Funding Circle FlexiPay facility, still
+held under the former name, and paying the money into its own account. That is £28,067 a
+month on the three-month average. This was already documented in the group Loans database
+Wiki on 21 August 2026; it was missed here because the Loans folder was not searched at the
+outset. **Lesson:** check the group Loans database and the other entity knowledge bases
+before drawing conclusions about any counterparty name.
+
+**2. Genuine trading receipts are £16,855 a month**, not the £44,921 a first reading of the
+statements suggests. Third-party customers £12,355 a month (Macdonald Joinery is the only
+substantial payer; the one-off Formbuild receipt of £10,140 on 31 July is excluded from the
+run rate), plus Fishbone Properties £4,500 a month. Everything else classified as a receipt
+on first pass was own borrowing.
+
+**3. Actual debt service is approximately £43,307 a month.** Funding Circle alone took
+£31,895 (June), £38,368 (July) and £34,990 (August) — an average of £35,084 a month across
+between 27 and 37 separate direct debits. The remainder is Nucleus £1,994, LendingCrowd
+£2,388, Haydock £1,210, HSBC £518, MotoNovo £460, SSAS standing orders £434, Tower Leasing
+£373 and director loans £846.
+
+*On the Payment Calendar:* it covers the twelve fixed-schedule facilities and correctly
+excludes the revolving FlexiPay books, which the Loans database tracks separately as Book 1
+and Book 2. The calendar is not defective. The gap is that no single figure anywhere
+consolidates the two, so a reader of the calendar alone understates cash leaving the company
+by roughly £18,700 a month.
+
+**4. Answer to the open question on Loans database Book 1.** Book 1 asked, on 21 August,
+whether its persistently negative net cash movement reflected normal draw-timing or a
+widening structural funding gap. **It is structural.** Over June to August the facility drew
+£28,067 a month and repaid £35,084 a month — net −£7,017 a month. Book 1's own lifetime
+figure agrees at −£125,908. The facility is amortising, so the cash it supplies falls every
+month while the repayments it demands do not.
+
+**5. HMRC is being paid, but with borrowed money.** An earlier reading in this session found
+no HMRC payment on three months of statements and wrongly concluded PAYE was going unpaid.
+The Loans database Book 1 records £54,258.57 paid directly to HMRC under a Time to Pay
+arrangement funded by FlexiPay. The money moves from lender to HMRC without passing through
+the current account, which is why it is invisible on the statements. The substance is that an
+interest-free HMRC arrangement has been converted into fee-bearing debt at an overall rate of
+8.53%. Worth asking HMRC whether it would extend Time to Pay directly instead.
+
+**6. The data collection layer is currently down.** Dext document uploads have been failing
+since 24 August. The QuickBooks bank feed has not updated — the HSBC 2819 balance read
+exactly £18,592.62 on both 2 and 4 September, and the Intuit consent is expiring. Every
+figure in this entry therefore comes from manually exported CSVs, not from a live feed.
+Reconnecting the bank feed needs an HSBC login and cannot be done without the owner.
+
+**7. Data integrity items outstanding.**
+
+- QuickBooks balance sheet reports net income of £2,866 at 2 September where the P&L for the
+  same date reports a loss of £433,119.
+- A/P aging totals £57,034 against £52,222 in the balance sheet — a difference of £4,812.
+- The A/R aging summary displays a headline of £106,968 which double-counts subtotal rows;
+  the correct figure is £55,656 and ties exactly to the balance sheet.
+- Sebastian Pabis appears twice across the group records: £50,506 owed by this company per
+  QuickBooks A/P, and separately a £35,000 related-party loan to Fishbone Properties Ltd per
+  the Loans database, on which no payment has ever been made. Either two distinct exposures
+  of about £85,000 combined, or one debt recorded against the wrong entity. Material either
+  way.
+
+### Outputs produced — not yet filed
+
+- *Fishbone Construction — Solvency Briefing v2, 4 Sep 2026* (Word). Balance-sheet and
+  cash-flow solvency assessment, with the director duties that follow.
+- *Fishbone 13-Week Cash Flow Forecast* (Excel). Weeks commencing 7 September to 30 November
+  2026, driven from an editable assumptions sheet, with three scenarios and the categorised
+  bank data as its evidence base.
+
+Both currently exist only outside this knowledge base. `Outputs/` remains empty. They should
+be filed there so they are reproducible and citable.
+
+### Notes for next session
+
+- Three Finance CSVs (February to May 2026) remain unprocessed.
+- `Outputs/` is empty and the two deliverables above need filing into it.
+- The group Loans database has the same problem: its Wiki cites
+  `Outputs/Fishbone_Loan_Repayment_Plan.xlsx` as the live source of truth, but that folder is
+  empty and the current workbook (3 September, 99KB) sits in a Downloads folder instead.
+  Three superseded copies also sit loose in the Drive root.
+- The Loans database Wiki predicted that if a third related-party loan surfaced it would be
+  worth asking whether there is a common cause. A third has surfaced: the Smartsheet
+  Repayment Plan lists "Sasha (director loan)" alongside Eugene and Sebik.
+
 ---
 
 **See also:** [Processing Workflow](processing-workflow.md) · [Database Structure](database-structure.md) · [Wiki Maintenance Guidelines](wiki-maintenance-guidelines.md)
