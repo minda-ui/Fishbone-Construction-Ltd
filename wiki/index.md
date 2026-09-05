@@ -7,8 +7,9 @@ Maintenance rules: `../CLAUDE.md`, section 2.
 Line format: `- [Title](Category/file-name.md) - one-line description`
 
 > **Start here if you want the picture in one line:** the company's only substantial customer
-> stopped paying in May 2026, the cost base followed revenue down but the debt did not, and
-> since then the gap has been filled by about £53,000 a month from the group and the directors.
+> stopped paying in May 2026 because that customer has no work, the cost base followed revenue
+> down but the debt did not, and since then the gap has been filled by about £53,000 a month
+> from the group and the directors. No replacement revenue is recorded anywhere.
 > [Macdonald Joinery](Customers/macdonald-joinery.md) →
 > [Debt service](Finance/debt-service.md) →
 > [Related-party funding](Finance/related-party-funding.md).
@@ -22,7 +23,7 @@ are unknown.)_
 ## Customers
 
 - [AT UK Interiors Ltd](Customers/at-uk-interiors.md) - `draft`. £25,447 received against job references, but the counterparty may be a related party. Unresolved
-- [Macdonald Joinery](Customers/macdonald-joinery.md) - the only substantial customer, 80% of receipts; payments fell 86% in May 2026 and nobody has established why
+- [Macdonald Joinery](Customers/macdonald-joinery.md) - the only substantial customer, 80% of receipts; payments fell 86% in May 2026 because the customer has no projects. Nothing replaces the revenue
 
 ## Decisions
 
@@ -75,14 +76,17 @@ category folder or in Markdown. In this git mirror they appear as `wiki/*.md` at
 - **No `Contracts/` article exists because no contract is held.** Every financial article
   describes an arrangement - a lending facility, a Time to Pay, an intercompany loan, a customer
   relationship - whose written terms are unknown to this knowledge base.
-- Nothing here covers what happens next: no sales pipeline, no contracted work, no forecast that
-  reflects the six-month data. The 13-week cash flow forecast of 4 September rests on a
-  superseded receipts assumption and has not been re-issued.
+- **Nothing here covers what happens next: no sales pipeline, no contracted work, no quote, no
+  forecast that reflects the six-month data.** As of 2026-09-05 this is the knowledge base's
+  first open question, not its last - the customer behind 80% of receipts has no projects, and
+  nothing is recorded that would replace them. The 13-week cash flow forecast of 4 September
+  rests on a superseded receipts assumption, was built before that was known, and has not been
+  re-issued.
 
 ---
 
-Four superseded copies of this file sit in `Archive/`, all dated 2026-09-05, each titled with
-its reason, per `../CLAUDE.md` §1. The fourth exists because the third asserted that number
-without counting, and `../CLAUDE.md` §6d rule 3 says to count it or not state it. Counted:
-four, at 2026-09-05 16:37 UTC. In this git mirror the listing is at
-[`../archive/README.md`](../archive/README.md); the contents are Drive-only.
+Superseded copies of this file sit in `Archive/`, each titled with its reason, per
+`../CLAUDE.md` §1. One of them exists only because an earlier copy asserted a count without
+counting, which `../CLAUDE.md` §6d rule 3 forbids. The current total is in
+[`../archive/README.md`](../archive/README.md), which states when it was counted; the archived
+contents are Drive-only.

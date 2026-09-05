@@ -14,6 +14,7 @@ correction is a new entry that references the old one.
 
 | Date | Entry | File |
 |---|---|---|
+| 2026-09-05 | Macdonald Joinery: the owner answered why | `Outputs/change-log-2026-09-05-macdonald-answered.md` |
 | 2026-09-05 | Drive mirrored to the git repository | `Outputs/change-log-2026-09-05-git-mirror.md` |
 | 2026-09-05 | Wiki built from the six months of bank data - 12 articles, 5 categories | `Outputs/change-log-2026-09-05-wiki-from-bank-data.md` |
 | 2026-09-05 | Standard KB skeleton applied; Raw invoices grouped by supplier | `Outputs/change-log-2026-09-05-kb-skeleton-and-raw-tidy.md` |
@@ -43,6 +44,7 @@ Status: `pending` = registered, not started · `partial` = started, work remains
 | `Raw/Finance/20260821_04212819.csv` | 2026-09-03 | done | same as above | HSBC 04212819, 22 Jul to 21 Aug 2026. |
 | `Raw/2024-10-31 Companies House certificate of change of name - Fishbone Drylining Ltd to Fishbone Construction Ltd (07948220).pdf` | 2026-09-04 | done | Finance/funding-circle-flexipay, Suppliers/trade-suppliers | Certificate of incorporation on change of name plus the NM01 and the special resolution. Renamed 2026-09-05 from `application-pdf.pdf`. |
 | `Raw/FP 2401_131 Goathland Avenue/` (99 invoice and receipt files) | 2026-08-25, re-read 2026-09-05 | done | Projects/fp-2401-goathland-avenue, Suppliers/trade-suppliers | Processed into ~40 new Classifier codes and the FP 2401 Budget on 2026-08-25. Every file re-read 2026-09-05 to identify its supplier; grouped into 8 supplier folders; see that folder's `INDEX.md`. |
+| `Raw/2026-09-05_owner-note_macdonald-joinery-has-no-projects.md` | 2026-09-05 | done | Customers/macdonald-joinery | Owner (Managing Director) verbal statement written up by the assistant: Macdonald Joinery has no projects. Answers what five months of bank data could not. In Drive `Raw/` and the mirror. |
 | `Raw/FP 2401_131 Goathland Avenue/INDEX.md` | 2026-09-05 | skipped | none | Folder index written by this KB, not source material. Registered so §3b Detect does not re-flag it. |
 
 **The six Finance CSVs moved from `partial` to `done` on 2026-09-05.** They were `partial`
@@ -63,6 +65,7 @@ articles now carry them.
 | 2026-09-05 | `index.md` replaced four times in one session | Three link and count defects, each named in its archived copy's title. The last was a count asserted without counting - §6d rule 3 |
 | 2026-09-05 | `Wiki/Decisions/2026-09-05-kb-skeleton-adopted.md` re-issued; previous copy archived | Its open question about the empty wiki was answered by the 12 articles built four hours later. Found while mirroring to git |
 | 2026-09-05 | Whole knowledge base mirrored to `minda-ui/Fishbone-Construction-Ltd`; `wiki/change-log.md` and the Goathland instructions mirror brought up to date | The repo carried only the five legacy documents as at 2026-09-02. Two deviations recorded in the entry: `Archive/` is mirrored as a manifest, and path case differs |
+| 2026-09-05 | `Wiki/Customers/macdonald-joinery.md` re-issued; `CLAUDE.md` replaced by v3; `Wiki/index.md` re-issued. All three previous copies archived | The owner answered why Macdonald Joinery stopped paying. §7's first open question closed and replaced by "what replaces the revenue?" |
 
 ## Outputs produced
 
@@ -71,7 +74,7 @@ articles now carry them.
 | `Fishbone Construction - Solvency Briefing v2 - 4 Sep 2026.docx` | 2026-09-04 | The June-August bank categorisation and the group Loans database | Owner |
 | `Fishbone 13-Week Cash Flow Forecast.xlsx` | 2026-09-04 | The same categorisation, driven from an editable assumptions sheet | Owner |
 
-**Both of these still exist only outside this knowledge base**, and both rest on a trading
-receipts assumption of £16,855 a month that `Wiki/Finance/trading-receipts.md` now supersedes:
-six months of data show it is the floor after a collapse, not a run rate. Filing them should
-mean re-issuing them.
+**Both of these still exist only outside this knowledge base**, and both are now doubly out of
+date: they rest on a trading receipts assumption of £16,855 a month that
+`Wiki/Finance/trading-receipts.md` supersedes, and they were built before it was known that the
+customer behind most of that figure has no projects. Filing them should mean re-issuing them.

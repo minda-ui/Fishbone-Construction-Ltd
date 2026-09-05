@@ -1,9 +1,11 @@
 # Fishbone Construction Ltd - Knowledge Base
 
-> **Status: AUTHORITATIVE. Version 2, 2026-09-05**, superseding version 1 of the same day (in
-> `Archive/`). V1 said in §7 that the wiki was "almost empty" and that its substance lived in
-> change-log entries. Twelve articles were built later that day and that claim became false, so
-> §1 and §7 are rewritten. Everything else is unchanged.
+> **Status: AUTHORITATIVE. Version 3, 2026-09-05**, superseding v2 of the same day (in
+> `Archive/`). V2's §7 listed "why did Macdonald Joinery stop paying?" as the first open
+> question. The owner answered it that evening - the customer has no projects - so §7 is
+> rewritten around what that leaves open. V2 itself superseded v1, whose §7 said the wiki was
+> "almost empty" four hours before twelve articles were built. Sections 0 to 6 are unchanged
+> since v1 apart from §1's folder tree.
 > Modelled on the live `CLAUDE.md` of the `Fishbone Commercial Properties Ltd - Knowledge Base`.
 > The rules in sections 1, 2, 4 and 6d were adopted from that file rather than re-derived,
 > because each of them has a real failure behind it and those failures are recorded there. What
@@ -313,8 +315,10 @@ citations.
   LTD. to FISHBONE CONSTRUCTION LTD. on 31 October 2024** - several trade and lending accounts
   still carry the old name, and documents in that name are this company's own.
 - **What happened** The only substantial customer, Macdonald Joinery, cut its payments 86% in a
-  single month in May 2026 and has paid about £8,000 a month since. Nobody has established why.
-  → `Wiki/Customers/macdonald-joinery.md`
+  single month in May 2026 and has paid about £8,000 a month since. **The owner confirmed on
+  2026-09-05 that the customer has no projects** - no work to place. Not a dispute, not a lost
+  contract, not a withheld payment, so there is nothing to chase or resolve. Whether it is
+  temporary is not known. → `Wiki/Customers/macdonald-joinery.md`
 - **The cost base worked** Subcontractors and materials fell from £62,721 a month to £18,647,
   tracking revenue down. Payroll held flat at about £9,100.
   → `Wiki/Suppliers/subcontractors.md`
@@ -327,12 +331,20 @@ citations.
 **Open questions, in priority order.** Each is stated in full, with how to close it, on the
 article named.
 
-1. **Why did Macdonald Joinery stop paying?** Contract completed, lost, disputed, or payment
-   withheld - each implies a completely different response. Four concrete routes to an answer
-   are on the article. → `Wiki/Customers/macdonald-joinery.md`
-2. **Do Fishbone Properties Ltd and the directors know they are funding ~£53,000 a month?** And
-   is the money labelled "Loan Payback" the repayment of a debt owed *to* this company, which
-   would invert the intercompany balance? → `Wiki/Finance/related-party-funding.md`
+~~1. Why did Macdonald Joinery stop paying?~~ **Answered 2026-09-05: the customer has no
+projects.** Kept visible per §6d rule 2. It was the top question for one day, and closing it
+promoted the two below, which had been second and third.
+
+1. **What replaces the revenue?** 80% of third-party receipts came from one customer who now has
+   no work, and **no other customer, contract or pipeline is recorded anywhere in this knowledge
+   base**. The concentration risk has already materialised. Nothing in `Raw/`, the wiki or
+   Smartsheet says what the company expects to invoice after August 2026.
+   → `Wiki/Customers/macdonald-joinery.md`, `Wiki/Finance/trading-receipts.md`
+2. **Do Fishbone Properties Ltd and the directors know they are funding ~£53,000 a month?** This
+   question changed character on 2026-09-05. If that money was being advanced in expectation
+   that Macdonald would come back, the basis for it has gone. Also: is the money labelled "Loan
+   Payback" the repayment of a debt owed *to* this company, which would invert the intercompany
+   balance? → `Wiki/Finance/related-party-funding.md`
 3. **Is the HMRC Time to Pay arrangement current or in default?** No payment to HMRC left the
    account between 22 April and 21 August 2026. Both readings produce identical bank statements.
    → `Wiki/Finance/hmrc.md`
@@ -351,8 +363,9 @@ article named.
 
 ---
 
-*Standing context for the Fishbone Construction Ltd knowledge base. Version 2, 2026-09-05,
-superseding version 1 of the same day. See
+*Standing context for the Fishbone Construction Ltd knowledge base. Version 3, 2026-09-05,
+superseding v2 and v1 of the same day. See
 `Wiki/Decisions/2026-09-05-kb-skeleton-adopted.md`,
-`Outputs/change-log-2026-09-05-kb-skeleton-and-raw-tidy.md` and
-`Outputs/change-log-2026-09-05-wiki-from-bank-data.md`.*
+`Outputs/change-log-2026-09-05-kb-skeleton-and-raw-tidy.md`,
+`Outputs/change-log-2026-09-05-wiki-from-bank-data.md` and
+`Outputs/change-log-2026-09-05-macdonald-answered.md`.*
