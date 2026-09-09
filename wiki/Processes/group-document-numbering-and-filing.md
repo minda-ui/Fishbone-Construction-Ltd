@@ -1,5 +1,5 @@
 ---
-title: Group document numbering and filing (policy v1.1)
+title: Group document numbering and filing (policy v1.2)
 category: Processes
 status: active
 sensitive: false
@@ -7,21 +7,24 @@ created: 2026-09-09
 updated: 2026-09-09
 sources:
   - ../../raw/2026-09-09_group-policy_document-numbering-and-filing-v1.1.md
+  - ../../raw/2026-09-09_group-policy_document-numbering-and-filing-v1.2.md
 related:
   - ../../CLAUDE.md
   - ../Decisions/2026-09-09-group-document-numbering-policy-adopted.md
   - ../Processes/email-to-tasks.md
 ---
 
-# Group document numbering and filing (policy v1.1)
+# Group document numbering and filing (policy v1.2)
 
-Adopted 2026-09-09. The Fishbone Group knowledge base issued a locked, versioned policy to
-every group KB (Fishbone Properties, Fishbone Commercial Properties, Fishbone Holdings, Fishbone
-Construction, Fishbone Waste, Amfa Furniture, Fishbone SSAS): register every business document
-across the group **once**, number it consistently, and file it with the project or company it
-belongs to. This article summarises it for this KB; the canonical text is
-`Wiki/Process-Document-Numbering-and-Filing.md` (v1.1) in the Fishbone Group database, delivered
-here as `Raw/2026-09-09_group-policy_document-numbering-and-filing-v1.1.md`. **Do not edit or
+Adopted 2026-09-09 at v1.1; updated the same day to **v1.2**. The Fishbone Group knowledge base
+issued a locked, versioned policy to every group KB (Fishbone Properties, Fishbone Commercial
+Properties, Fishbone Holdings, Fishbone Construction, Fishbone Waste, Amfa Furniture, Fishbone
+SSAS): register every business document across the group **once**, number it consistently, and
+file it with the project or company it belongs to. This article summarises it for this KB; the
+canonical text is `Wiki/Process-Document-Numbering-and-Filing.md` (v1.2) in the Fishbone Group
+database, delivered here as `Raw/2026-09-09_group-policy_document-numbering-and-filing-v1.2.md`
+(v1.1 arrived first, as `Raw/2026-09-09_group-policy_document-numbering-and-filing-v1.1.md`;
+both stay in `Raw/`, per this KB's own immutability rule - see Sources below). **Do not edit or
 fork these rules locally** - raise anything that doesn't fit as a row on the group's Change
 Requests sheet (below); only the group edits the policy.
 
@@ -84,6 +87,15 @@ valuations; completion/redemption statements; property- or project-tied invoices
 **Do not register:** marketing/newsletters; generic recurring bills with no property/entity tie;
 duplicates; routine automated notifications. If it's unclear, raise it - don't guess.
 
+**Tasks are not documents (§6, new in v1.2).** A task, to-do or action item - including an
+automation's own action list - is not a business record and gets no Document Register row and
+no document ID, whatever channel it arrived through (a task sheet, an email thread that is
+itself just a to-do). Keep tasks in a task sheet/tracker (this KB's `FCT` sheet) instead. A
+document is registered only once a thread yields a verified business record: an actual stored
+file, or an email that is itself the record (its Gmail thread id as `Source key`). This
+clarification came out of `FC-CR-0001` (below) and settles that `FCD0000001`-`FCD0000014`
+correctly stay off the group register.
+
 ## Filing - with the project, in Collaboration Space
 
 Keep the file in the shared **Collaboration Space** library, co-located in the folder of the
@@ -116,25 +128,29 @@ knowledge, **only** like this:
 
 ## Locked rules, one feedback channel
 
-The rules are locked and versioned (currently v1.1). If a document doesn't fit, a rule is
+The rules are locked and versioned (currently v1.2). If a document doesn't fit, a rule is
 ambiguous, or there's an improvement to suggest, **do not fork the rules** - raise a row on the
 group's **Document System - Change Requests** sheet, same workspace:
 [sheet](https://app.smartsheet.eu/sheets/hrx6rP255gm8qVVQgX47GjQmqHGWRf576Vmm5hF1) (sheet id
 `8918834172004228`). The group reviews the queue and, if a change is warranted, issues a new
-policy version and notifies every KB to adopt it.
+policy version and notifies every KB to adopt it - `FC-CR-0001` below is the first instance of
+that loop running end to end.
 
 ## Transition: what changes now, what doesn't
 
 - **New qualifying business documents** from now on are registered in the **group** register
   (`FC`-prefixed) and filed in Collaboration Space per the rules above, not added to the local
   `FCD` sheet.
-- **The existing local Construction Document Register (`FCD`) and Tasks sheet (`FCT`) keep
-  working as they are.** The policy's own transition text says the local register "keeps
-  working for now" and that its back-catalogue will be migrated into the group register as a
-  follow-on the group runs, with dedup-on-entry throughout so nothing is lost or
-  double-numbered. **This KB does not run that migration itself.**
+- **Each KB may now migrate its own local back-catalogue whenever it's ready (§11, new in
+  v1.2)** - deduping on entry against the group register (by `Source key` and by title + date +
+  counterparty), and retiring the local sheet once its live entries are migrated. This replaced
+  v1.1's "the group runs the migration" position, per `FC-CR-0001` below. For this KB, that
+  question is now moot: the local Construction Document Register's back-catalogue outside the
+  MSEM case is `FCD0000001`-`FCD0000014`, and all 14 are tasks under the new §6 rule above, so
+  none of them migrate regardless of who is allowed to run it.
 - The `FCT` Tasks sheet is a task-tracking mechanism, not a document register, and is unaffected
-  by this policy either way.
+  by this policy either way - if anything, §6 above makes the boundary between the two sheets
+  sharper than before.
 
 ## First real registration: `FC0000001`
 
@@ -169,7 +185,7 @@ This shows the previous section's "deliberate limit" was exactly that - a limit 
 instruction given at the time, lifted the moment a broader instruction was given. It was not a
 policy position that only originating documents get registered.
 
-## The rest of the local back-catalogue: raised, not migrated (`FC-CR-0001`)
+## The rest of the local back-catalogue: raised as `FC-CR-0001`, resolved the same day
 
 2026-09-09, later the same day again: the owner asked to migrate the rest of the local `FCD`
 back-catalogue too. Checking it first (23 rows total; 9 now `FC0000001`-`FC0000009`) found the
@@ -181,36 +197,44 @@ action items ("Reconcile Tower Leasing invoice 916284 overdue notice", "Verify F
 INV-1627 payment and filing") rather than document titles - closer to the local `FCT` Tasks
 mechanism than to a registrable document.
 
-**Not migrated.** Raised instead as `FC-CR-0001` on the group's Document System - Change
-Requests sheet: whether these 14 rows qualify for the group register at all (policy v1.1
-excludes "routine automated notifications" and asks that anything unclear be raised, not
-guessed), and, separately, whether this KB is expected to run any part of the back-catalogue
-migration or wait for a group-run pass with its own dedup. This follows the policy's own
-"do not fork the rules... raise a row" instruction rather than deciding unilaterally. Detail:
-`Outputs/change-log-2026-09-09-back-catalogue-change-request-raised.md`.
+**Not migrated at the time; raised instead as `FC-CR-0001`** on the group's Document System -
+Change Requests sheet: whether these 14 rows qualify for the group register at all, and,
+separately, whether this KB is expected to run any part of the back-catalogue migration or wait
+for a group-run pass. Detail: `Outputs/change-log-2026-09-09-back-catalogue-change-request-raised.md`.
+
+**Resolved the same day: Accepted.** The group reviewed `FC-CR-0001` and replied by delivering
+policy **v1.2** to `Raw/` (found on a later check of that folder): (1) task/email-tracking rows
+with no verified business record do **not** qualify for the register - confirms the decision not
+to migrate the 14; (2) each KB may now migrate its own back-catalogue whenever ready, deduping
+on entry - the group no longer runs a central migration. Both are now in the policy text above
+(§6 and the Transition section). For this KB specifically, point (2) turns out to be moot: with
+point (1) in force, there is no back-catalogue left to migrate - all 23 local `FCD` rows are
+accounted for (9 as group documents, 14 correctly excluded as tasks). Detail:
+`Outputs/change-log-2026-09-09-v1.2-adopted.md`.
 
 ## Open questions
 
-- `FC-CR-0001` is open on the group's Change Requests sheet; no response yet.
-- No timeline has been given for when the group will migrate the local `FCD` back-catalogue,
-  or whether task/email-tracking rows like `FCD0000001`-`FCD0000014` are even in scope for it.
+- None outstanding on this policy. `FC-CR-0001` is closed (Accepted, resolved 2026-09-09); the
+  local back-catalogue question is settled with nothing left to migrate.
 
 ## Sources
 
-The policy text as delivered: `Raw/2026-09-09_group-policy_document-numbering-and-filing-v1.1.md`.
-Per its own instructions ("do not register it on the Document Register and do not assign it a
-document ID - it is a policy notice, not a business document... archive this file per your
-normal workflow"), it has been read and adopted here. It has **not** been physically moved or
-deleted from `Raw/`: this KB's own rule that "nothing is deleted or moved out of Raw" (`CLAUDE.md`
-§1) is stronger and more specific than the group notice's generic "archive it," and takes
-precedence for this KB's own files. It is registered as `skipped` in
-`Outputs/kb-registers.md`'s Processed items table (not source material for the Wiki) rather than
-relocated.
+The policy text as delivered, in order:
+`Raw/2026-09-09_group-policy_document-numbering-and-filing-v1.1.md` and
+`Raw/2026-09-09_group-policy_document-numbering-and-filing-v1.2.md`. Per their instructions
+("do not register it on the Document Register and do not assign it a document ID - it is a
+policy notice, not a business document... archive this file per your normal workflow"), both
+have been read and adopted here. Neither has been physically moved or deleted from `Raw/`: this
+KB's own rule that "nothing is deleted or moved out of Raw" (`CLAUDE.md` §1) is stronger and
+more specific than the group notice's generic "archive it," and takes precedence for this KB's
+own files. Both are registered as `skipped` in `Outputs/kb-registers.md`'s Processed items table
+(not source material for the Wiki) rather than relocated.
 
 ## Changes
 
 | Date | Change | Change-log ref |
 |---|---|---|
+| 2026-09-09 | Policy v1.2 adopted; `FC-CR-0001` resolved (Accepted); no back-catalogue left to migrate | `Outputs/change-log-2026-09-09-v1.2-adopted.md` |
 | 2026-09-09 | Rest of the local `FCD` back-catalogue: raised as `FC-CR-0001`, not migrated | `Outputs/change-log-2026-09-09-back-catalogue-change-request-raised.md` |
 | 2026-09-09 | Rest of the MSEM case registered (`FC0000002`-`FC0000009`) | `Outputs/change-log-2026-09-09-msem-case-documents-registered.md` |
 | 2026-09-09 | First real document registered (`FC0000001`, the MSEM claim form) | `Outputs/change-log-2026-09-09-first-group-register-document.md` |
