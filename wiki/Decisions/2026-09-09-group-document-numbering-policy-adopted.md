@@ -68,16 +68,30 @@ initiative would have gone beyond what was asked, and duplicated work the group'
 back-catalogue migration is meant to do. Detail:
 `Outputs/change-log-2026-09-09-first-group-register-document.md`.
 
+## The rest of the case, registered on explicit instruction
+
+Later the same day, the owner explicitly instructed: "register FCD0000015–FCD0000023." This
+lifted the limit described above for this one case: the remaining 8 local documents
+(`FCD0000018` was already `FC0000001`) were registered as `FC0000002`-`FC0000009`. Two were
+renamed in place in this KB's own `Raw/` (the KB's own Raw-immutability rule outranking the
+group's Collaboration Space convention); the other six, already in Collaboration Space, were
+renamed in place there. A claimant contact's home address and a live Money Claims Online
+security code, both present in the underlying local descriptions, were kept out of the shared
+register - the first as routine personal-data minimisation, the second because a live
+credential has no place in a register seven companies can read. Detail:
+`Outputs/change-log-2026-09-09-msem-case-documents-registered.md`.
+
 ## Open question
 
-Whether the case's other documents (and the rest of the local `FCD` back-catalogue generally)
-should be cross-registered in the group register now, or left for the group's own migration, is
-still open; not done without an instruction.
+Whether the rest of the local `FCD` back-catalogue - documents outside this one case - should be
+cross-registered in the group register now, or left for the group's own migration, is still
+open; not done without an instruction.
 
 ## Changes
 
 | Date | Change | Change-log ref |
 |---|---|---|
+| 2026-09-09 | Rest of the MSEM case registered (`FC0000002`-`FC0000009`) | `Outputs/change-log-2026-09-09-msem-case-documents-registered.md` |
 | 2026-09-09 | First real document registered | `Outputs/change-log-2026-09-09-first-group-register-document.md` |
 | 2026-09-09 | Write access confirmed | `Outputs/change-log-2026-09-09-group-document-numbering-write-access-confirmed.md` |
 | 2026-09-09 | Created | `Outputs/change-log-2026-09-09-group-document-numbering-adopted.md` |

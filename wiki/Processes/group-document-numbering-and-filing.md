@@ -146,16 +146,35 @@ rename to the `<ID> - <Category> - <Short Title>` convention was needed, done in
 Drive file id). The local `FCD0000018` row was updated to cross-reference `FC0000001`. Detail:
 `Outputs/change-log-2026-09-09-first-group-register-document.md`.
 
-Only the Claim form was registered - the case's other local documents (`FCD0000015`-`FCD0000023`)
-were not also given group numbers. That is a deliberate limit, not an oversight: see the open
-questions below.
+Only the Claim form was registered at first - the case's other local documents
+(`FCD0000015`-`FCD0000023`) were not also given group numbers. That was a deliberate limit, not
+an oversight, and was recorded as open below.
+
+## The rest of the case: `FC0000002`-`FC0000009`
+
+2026-09-09, later the same day, at the owner's explicit instruction ("register
+FCD0000015–FCD0000023"): the case's other 8 local documents were registered too, as
+`FC0000002` through `FC0000009` (ascending local-ID order; `FCD0000018` was already
+`FC0000001`). Two (`FCD0000015`, `FCD0000016`) are physically in this KB's own `Raw/` and were
+renamed in place there, per this KB's own Raw-immutability rule taking precedence over the
+group's Collaboration Space filing convention; the other six were already in Collaboration
+Space and were renamed in place. All 8 local `FCD` rows were cross-referenced back to their new
+`FC` numbers. Two details were deliberately excluded from the shared descriptions: a claimant's
+individual contact's home address (personal-data minimisation, as for `FC0000001`), and a live
+Money Claims Online security/access code found in one document's covering note (a credential,
+not appropriate for a register shared across seven companies). Detail:
+`Outputs/change-log-2026-09-09-msem-case-documents-registered.md`.
+
+This shows the previous section's "deliberate limit" was exactly that - a limit tied to the
+instruction given at the time, lifted the moment a broader instruction was given. It was not a
+policy position that only originating documents get registered.
 
 ## Open questions
 
 - No timeline has been given for when the group will migrate the local `FCD` back-catalogue.
-- Whether the rest of this same case's documents (and the rest of the `FCD` back-catalogue
-  generally) should be cross-registered in the group register now, or left entirely for the
-  group's own migration, is not yet decided; not done without an instruction.
+- Whether the rest of the `FCD` back-catalogue generally (documents outside this one case) should
+  be cross-registered in the group register now, or left entirely for the group's own migration,
+  is not yet decided; not done without an instruction.
 
 ## Sources
 
@@ -173,6 +192,7 @@ relocated.
 
 | Date | Change | Change-log ref |
 |---|---|---|
+| 2026-09-09 | Rest of the MSEM case registered (`FC0000002`-`FC0000009`) | `Outputs/change-log-2026-09-09-msem-case-documents-registered.md` |
 | 2026-09-09 | First real document registered (`FC0000001`, the MSEM claim form) | `Outputs/change-log-2026-09-09-first-group-register-document.md` |
 | 2026-09-09 | Write access confirmed by a scripted add-then-delete test; open questions updated | `Outputs/change-log-2026-09-09-group-document-numbering-write-access-confirmed.md` |
 | 2026-09-09 | Created; policy v1.1 adopted | `Outputs/change-log-2026-09-09-group-document-numbering-adopted.md` |
