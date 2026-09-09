@@ -7,6 +7,13 @@ replaced (archive-then-recreate, per `CLAUDE.md` §1) whenever a row is added.
 Three of its four tables answer "what is the state of the knowledge base now", not "what
 happened in a session". The fourth, the entry index, is the chronology.
 
+**This copy merges two versions that were written concurrently and both went live at once**
+(2026-09-09, around 07:58 and 08:05) - one added the MSEM court-case workspace, the other added
+this session's vehicle-workspace addendum; neither knew about the other's row when it was
+written. Both archived copies are kept, titled with this as the reason. If a third concurrent
+write happens again, check for more than one live `kb-registers.md` before trusting a single
+read of this file.
+
 ## Change-log entries
 
 One file per session or run, in `Outputs/`, newest first. Never edited after it is written; a
@@ -14,6 +21,7 @@ correction is a new entry that references the old one.
 
 | Date | Entry | File |
 |---|---|---|
+| 2026-09-09 | MSEM UK Ltd case workspace built for claim 019JE538 (BBC Cardiff dispute) | `Outputs/change-log-2026-09-09-msem-case-workspace.md` |
 | 2026-09-09 | Vehicle workspace addendum: Wiki/Assets category, CLAUDE.md v4, and a folder mix-up corrected | `Outputs/change-log-2026-09-09-vehicle-workspace-created-addendum.md` |
 | 2026-09-09 | County Court claim 019JE538: trial date and allocation notice registered | `Outputs/change-log-2026-09-09-court-notice-019je538.md` |
 | 2026-09-09 | Vehicles workspace created; Ford Transit identified, two vehicles still awaited (written retrospectively) | `Outputs/change-log-2026-09-09-vehicle-workspace-created.md` |
@@ -36,11 +44,9 @@ logging mechanism until 2026-09-05. It is **closed, not deleted**: it is still t
 that period and carries a banner pointing here. Everything from 2026-09-05 onward is a dated
 file in this folder.
 
-**Two entries share the "vehicle workspace" subject on 2026-09-09** because two sessions were
-editing this knowledge base concurrently: one wrote the Raw workspace and the retrospective
-account of it; the other (which found the gap) added the Wiki category, the Decisions article,
-and `CLAUDE.md` v4, and filed its record as an addendum rather than overwriting the name already
-taken. Read both for the full picture.
+**Three entries touch "vehicle workspace" or overlapping 2026-09-09 subjects** because multiple
+sessions were editing this knowledge base concurrently that day. Read all of them for the full
+picture; none was overwritten.
 
 ## Processed items
 
@@ -49,11 +55,13 @@ Status: `pending` = registered, not started · `partial` = started, work remains
 
 | Raw path | Processed (date) | Status | Wiki articles created / updated | Notes |
 |---|---|---|---|---|
+| `MSEM UK Ltd Claim - BBC Cardiff` folder (Drive, owned by lana@fishboneconstruction.co.uk; not this KB's Raw/) plus `Raw/2026-09-09 Claimant's N180...pdf` | 2026-09-09 | done | none (sensitive legal correspondence; tracked in Tasks/Document Register and the case folder's own INDEX.md, per the FCT00007/FCD0000007 pattern) | Pre-existing case folder discovered and indexed rather than duplicated - see `Outputs/change-log-2026-09-09-msem-case-workspace.md`. Registered FCD0000017-FCD0000023; opened FCT00015-FCT00018. |
 | `Raw/2026-09-09 County Court Lincoln - Notice of Trial Date and Allocation to Small Claims Track - claim 019JE538 (MSEM UK LTD v Fishbone Construction Ltd).pdf` | 2026-09-09 | done | none (sensitive legal correspondence; tracked in Tasks/Document Register only, per the FCT00007/FCD0000007 pattern) | Scanned notice, uploaded directly to Raw/ (not via email). Renamed from `Document_2026-09-09_073700.pdf`. Registered as FCD0000015; FCT00007 updated with the new hearing (19 Nov 2026), evidence-exchange deadline (21 Oct 2026) and claimant trial-fee deadline (22 Oct 2026). No filing, response or contact made. |
-| `Raw/Vehicles/INDEX.md` | 2026-09-09 | skipped | Assets/vehicles | Folder index written by this KB, not source material. Registered so §3b Detect does not re-flag it. Vehicle #1 (Ford Transit HT22BWP) confirmed against bank data and the group Loans database; Haydock Finance ruled out as machinery, not a vehicle; Tower Leasing and vehicles #2/#3 still open. Findings written up in both `Wiki/Assets/vehicles.md` and the two 2026-09-09 vehicle-workspace change-log entries. |
-| `Raw/Email/2026-09-09-morning-intake.json` | 2026-09-09 | done | Processes/email-to-tasks, Finance/related-party-funding | Four message bodies (Tower Leasing follow-up, SiteDocs cancellation confirmation, Pensions Regulator re-enrolment reminder, FY2025 dividend request). Tasks/Document Register entries (FCT00001 update, FCT00004, FCT00012-FCT00014; FCD0000012-FCD0000014) were already written by the scheduled routine before this session; this session added the four missing Mail Register rows (FCM0000079-FCM0000082), the two Wiki updates above, and this entry. Attachment capture, the starred-count discrepancy and the 25 August historical backlog remain outstanding. |
-| `Raw/Email/2026-09-08-morning-intake.json` | 2026-09-08 | partial | Processes/email-to-tasks | Eight bodies captured, three new tasks; portal and attachment evidence pending. |
-| `Raw/Email/2026-09-06-info-pilot.json` | 2026-09-06 | partial | Processes/email-to-tasks | Fourteen message bodies captured; eight follow-ups. Attachments, entity routing and complete source review remain pending. |
+| `Raw/Vehicles/INDEX.md` | 2026-09-09 | skipped | Assets/vehicles | Folder index written by this KB, not source material. Registered so §3b Detect does not re-flag it. Vehicle #1 (Ford Transit HT22BWP) confirmed against bank data and the group Loans database; Haydock Finance ruled out as machinery, not a vehicle; Tower Leasing and vehicles #2/#3 still open. Findings written up in both `Wiki/Assets/vehicles.md` and the 2026-09-09 vehicle-workspace change-log entries. |
+| `Raw/2026-09-09_group-policy_document-numbering-and-filing-v1.1.md` | 2026-09-09 | skipped | none | Group-wide policy notice from the Fishbone Group knowledge base (not a business document - explicitly marked "do not register on the Document Register"). Establishes a single cross-entity Document Register (Smartsheet, sheet id `7352854736144260`) with 7-digit per-entity-prefixed IDs (`FC` for Construction), superseding/absorbing the existing local `FCT`/`FCD` numbering over time. **Not yet adopted into this file** - flagged to the owner rather than actioned unilaterally, since it changes a structural, cross-company convention and Editor access to the new workspace was still being arranged as of this read. See the owner-facing note in the 2026-09-09 session that found it. |
+| Raw/Email/2026-09-09-morning-intake.json | 2026-09-09 | done | Processes/email-to-tasks, Finance/related-party-funding | Four message bodies (Tower Leasing follow-up, SiteDocs cancellation confirmation, Pensions Regulator re-enrolment reminder, FY2025 dividend request). Tasks/Document Register entries (FCT00001 update, FCT00004, FCT00012-FCT00014; FCD0000012-FCD0000014) were already written by the scheduled routine before this session; this session added the four missing Mail Register rows (FCM0000079-FCM0000082), the two Wiki updates above, and this entry. Attachment capture, the starred-count discrepancy and the 25 August historical backlog remain outstanding. |
+| Raw/Email/2026-09-08-morning-intake.json | 2026-09-08 | partial | Processes/email-to-tasks | Eight bodies captured, three new tasks; portal and attachment evidence pending. |
+| Raw/Email/2026-09-06-info-pilot.json | 2026-09-06 | partial | Processes/email-to-tasks | Fourteen message bodies captured; eight follow-ups. Attachments, entity routing and complete source review remain pending. |
 | `Raw/Finance/20260321_04212819.csv` | 2026-09-05 | done | Finance/hsbc-current-account, Finance/trading-receipts, Finance/debt-service, Finance/funding-circle-flexipay, Finance/related-party-funding, Finance/hmrc, Customers/macdonald-joinery, Customers/at-uk-interiors, Suppliers/subcontractors, Suppliers/trade-suppliers | HSBC 04212819, 22 Feb to 21 Mar 2026. Categorised and reconciled to every printed balance. Sensitive: financial data. Drive-only. |
 | `Raw/Finance/20260421_04212819.csv` | 2026-09-05 | done | same as above | HSBC 04212819, 22 Mar to 21 Apr 2026. |
 | `Raw/Finance/20260521_04212819.csv` | 2026-09-05 | done | same as above | HSBC 04212819, 22 Apr to 21 May 2026. |
@@ -90,7 +98,8 @@ folder's own `INDEX.md` should be kept current alongside this table.
 | 2026-09-05 | `Wiki/Customers/macdonald-joinery.md` re-issued; `CLAUDE.md` replaced by v3; `Wiki/index.md` re-issued. All three previous copies archived | The owner answered why Macdonald Joinery stopped paying. §7's first open question closed and replaced by "what replaces the revenue?" |
 | 2026-09-06 | Created `Wiki/Processes/email-to-tasks.md`; indexed in `index.md`; `Raw/Email/` established as the source folder for captured message bodies | Owner-authorised Construction Smartsheet workspace and info-mailbox intake pipeline. `CLAUDE.md` was updated in place with an operational-update banner rather than through archive-then-recreate - corrected below |
 | 2026-09-09 | Created `Raw/Vehicles/` (INDEX.md plus one vehicle subfolder); no Wiki article yet at this point | Owner identified the company's vehicles; vehicle 1 (Ford Transit HT22BWP) confirmed against bank data and the group Loans database, two more awaited |
-| 2026-09-09 | Created `Wiki/Assets/` category and `Wiki/Assets/vehicles.md`; created `Wiki/Decisions/2026-09-09-assets-category-and-vehicles-workspace.md`; `Wiki/index.md` re-issued to list both; `CLAUDE.md` replaced by v4 (folding the 2026-09-06 in-place edit into proper archive-then-recreate, adding the Assets/Vehicles workspace to §1, and adding §6d rule 5 on that gap) | Closes the "no Wiki article yet" gap left by the row above. A concurrent session had, in parallel, filed the Mail Register/dividend and court-notice entries and a retrospective account of the Raw workspace - see the two 2026-09-09 rows in Change-log entries |
+| 2026-09-09 | Created `Wiki/Assets/` category and `Wiki/Assets/vehicles.md`; created `Wiki/Decisions/2026-09-09-assets-category-and-vehicles-workspace.md`; `Wiki/index.md` re-issued to list both; `CLAUDE.md` replaced by v4 (folding the 2026-09-06 in-place edit into proper archive-then-recreate, adding the Assets/Vehicles workspace to §1, and adding §6d rule 5 on that gap) | Closes the "no Wiki article yet" gap left by the row above |
+| 2026-09-09 | Added `INDEX.md` to the pre-existing (non-KB) `MSEM UK Ltd Claim - BBC Cardiff` Drive folder; no Wiki article | Consolidates the claim 019JE538 case papers and a readiness checklist. Deliberately outside `Wiki/`, matching the sensitive-legal-matter pattern already used for FCT00007/FCD0000007. |
 
 ## Outputs produced
 
