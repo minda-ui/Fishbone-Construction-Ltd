@@ -14,7 +14,10 @@ correction is a new entry that references the old one.
 
 | Date | Entry | File |
 |---|---|---|
-| 2026-09-09 | Assets category and Vehicles workspace created; `CLAUDE.md` replaced by v4 | `Outputs/change-log-2026-09-09-vehicle-workspace-created.md` |
+| 2026-09-09 | Vehicle workspace addendum: Wiki/Assets category, CLAUDE.md v4, and a folder mix-up corrected | `Outputs/change-log-2026-09-09-vehicle-workspace-created-addendum.md` |
+| 2026-09-09 | County Court claim 019JE538: trial date and allocation notice registered | `Outputs/change-log-2026-09-09-court-notice-019je538.md` |
+| 2026-09-09 | Vehicles workspace created; Ford Transit identified, two vehicles still awaited (written retrospectively) | `Outputs/change-log-2026-09-09-vehicle-workspace-created.md` |
+| 2026-09-09 | Morning intake: closed the Mail Register gap, added the Fishbone Holdings dividend finding | `Outputs/change-log-2026-09-09-morning-intake.md` |
 | 2026-09-08 | Morning intake; SiteDocs progress and three follow-ups | `Outputs/change-log-2026-09-08-morning-intake.md` |
 | 2026-09-06 | Info-only Smartsheet workspace, eight tasks, archive pilot and scheduled intake | `Outputs/change-log-2026-09-06-info-workspace-setup.md` |
 | 2026-09-06 | Construction inbox housekeeping review; proposal only | `Outputs/change-log-2026-09-06-inbox-housekeeping-review.md` |
@@ -33,6 +36,12 @@ logging mechanism until 2026-09-05. It is **closed, not deleted**: it is still t
 that period and carries a banner pointing here. Everything from 2026-09-05 onward is a dated
 file in this folder.
 
+**Two entries share the "vehicle workspace" subject on 2026-09-09** because two sessions were
+editing this knowledge base concurrently: one wrote the Raw workspace and the retrospective
+account of it; the other (which found the gap) added the Wiki category, the Decisions article,
+and `CLAUDE.md` v4, and filed its record as an addendum rather than overwriting the name already
+taken. Read both for the full picture.
+
 ## Processed items
 
 Status: `pending` = registered, not started · `partial` = started, work remains (see notes) ·
@@ -40,8 +49,9 @@ Status: `pending` = registered, not started · `partial` = started, work remains
 
 | Raw path | Processed (date) | Status | Wiki articles created / updated | Notes |
 |---|---|---|---|---|
-| `Raw/Vehicles/INDEX.md` | 2026-09-09 | skipped | none | Folder index written by this KB, not source material. Registered so §3b Detect does not re-flag it. |
-| `Raw/Email/2026-09-09-morning-intake.json` | 2026-09-09 | pending | Processes/email-to-tasks | Four selected message bodies. |
+| `Raw/2026-09-09 County Court Lincoln - Notice of Trial Date and Allocation to Small Claims Track - claim 019JE538 (MSEM UK LTD v Fishbone Construction Ltd).pdf` | 2026-09-09 | done | none (sensitive legal correspondence; tracked in Tasks/Document Register only, per the FCT00007/FCD0000007 pattern) | Scanned notice, uploaded directly to Raw/ (not via email). Renamed from `Document_2026-09-09_073700.pdf`. Registered as FCD0000015; FCT00007 updated with the new hearing (19 Nov 2026), evidence-exchange deadline (21 Oct 2026) and claimant trial-fee deadline (22 Oct 2026). No filing, response or contact made. |
+| `Raw/Vehicles/INDEX.md` | 2026-09-09 | skipped | Assets/vehicles | Folder index written by this KB, not source material. Registered so §3b Detect does not re-flag it. Vehicle #1 (Ford Transit HT22BWP) confirmed against bank data and the group Loans database; Haydock Finance ruled out as machinery, not a vehicle; Tower Leasing and vehicles #2/#3 still open. Findings written up in both `Wiki/Assets/vehicles.md` and the two 2026-09-09 vehicle-workspace change-log entries. |
+| `Raw/Email/2026-09-09-morning-intake.json` | 2026-09-09 | done | Processes/email-to-tasks, Finance/related-party-funding | Four message bodies (Tower Leasing follow-up, SiteDocs cancellation confirmation, Pensions Regulator re-enrolment reminder, FY2025 dividend request). Tasks/Document Register entries (FCT00001 update, FCT00004, FCT00012-FCT00014; FCD0000012-FCD0000014) were already written by the scheduled routine before this session; this session added the four missing Mail Register rows (FCM0000079-FCM0000082), the two Wiki updates above, and this entry. Attachment capture, the starred-count discrepancy and the 25 August historical backlog remain outstanding. |
 | `Raw/Email/2026-09-08-morning-intake.json` | 2026-09-08 | partial | Processes/email-to-tasks | Eight bodies captured, three new tasks; portal and attachment evidence pending. |
 | `Raw/Email/2026-09-06-info-pilot.json` | 2026-09-06 | partial | Processes/email-to-tasks | Fourteen message bodies captured; eight follow-ups. Attachments, entity routing and complete source review remain pending. |
 | `Raw/Finance/20260321_04212819.csv` | 2026-09-05 | done | Finance/hsbc-current-account, Finance/trading-receipts, Finance/debt-service, Finance/funding-circle-flexipay, Finance/related-party-funding, Finance/hmrc, Customers/macdonald-joinery, Customers/at-uk-interiors, Suppliers/subcontractors, Suppliers/trade-suppliers | HSBC 04212819, 22 Feb to 21 Mar 2026. Categorised and reconciled to every printed balance. Sensitive: financial data. Drive-only. |
@@ -78,8 +88,9 @@ folder's own `INDEX.md` should be kept current alongside this table.
 | 2026-09-05 | `Wiki/Decisions/2026-09-05-kb-skeleton-adopted.md` re-issued; previous copy archived | Its open question about the empty wiki was answered by the 12 articles built four hours later. Found while mirroring to git |
 | 2026-09-05 | Whole knowledge base mirrored to `minda-ui/Fishbone-Construction-Ltd`; `wiki/change-log.md` and the Goathland instructions mirror brought up to date | The repo carried only the five legacy documents as at 2026-09-02. Two deviations recorded in the entry: `Archive/` is mirrored as a manifest, and path case differs |
 | 2026-09-05 | `Wiki/Customers/macdonald-joinery.md` re-issued; `CLAUDE.md` replaced by v3; `Wiki/index.md` re-issued. All three previous copies archived | The owner answered why Macdonald Joinery stopped paying. §7's first open question closed and replaced by "what replaces the revenue?" |
-| 2026-09-06 | Created `Wiki/Processes/email-to-tasks.md`; indexed in `index.md`; `Raw/Email/` established as the source folder for captured message bodies | Owner-authorised Construction Smartsheet workspace and info-mailbox intake pipeline. `CLAUDE.md` was updated in place with an operational-update banner rather than through archive-then-recreate - see the 2026-09-09 row below |
-| 2026-09-09 | Created `Wiki/Assets/` category and `Wiki/Assets/vehicles.md`; created `Wiki/Decisions/2026-09-09-assets-category-and-vehicles-workspace.md`; created `Raw/Vehicles/` with `INDEX.md`; `CLAUDE.md` replaced by v4 (folding in the 2026-09-06 in-place edit through archive-then-recreate, and adding §6d rule 5 on that gap); `Wiki/index.md` and this file re-issued | Owner: the company owns or leases 3 vehicles and wants a dedicated workspace; documents will be registered here as uploaded and added to Smartsheet later |
+| 2026-09-06 | Created `Wiki/Processes/email-to-tasks.md`; indexed in `index.md`; `Raw/Email/` established as the source folder for captured message bodies | Owner-authorised Construction Smartsheet workspace and info-mailbox intake pipeline. `CLAUDE.md` was updated in place with an operational-update banner rather than through archive-then-recreate - corrected below |
+| 2026-09-09 | Created `Raw/Vehicles/` (INDEX.md plus one vehicle subfolder); no Wiki article yet at this point | Owner identified the company's vehicles; vehicle 1 (Ford Transit HT22BWP) confirmed against bank data and the group Loans database, two more awaited |
+| 2026-09-09 | Created `Wiki/Assets/` category and `Wiki/Assets/vehicles.md`; created `Wiki/Decisions/2026-09-09-assets-category-and-vehicles-workspace.md`; `Wiki/index.md` re-issued to list both; `CLAUDE.md` replaced by v4 (folding the 2026-09-06 in-place edit into proper archive-then-recreate, adding the Assets/Vehicles workspace to §1, and adding §6d rule 5 on that gap) | Closes the "no Wiki article yet" gap left by the row above. A concurrent session had, in parallel, filed the Mail Register/dividend and court-notice entries and a retrospective account of the Raw workspace - see the two 2026-09-09 rows in Change-log entries |
 
 ## Outputs produced
 
