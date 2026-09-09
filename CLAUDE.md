@@ -1,13 +1,15 @@
 # Fishbone Construction Ltd - Knowledge Base
 
-> **Status: AUTHORITATIVE. Version 5, 2026-09-09**, superseding v4 of the same day (in
-> `Archive/`). One change: §1's live-data-sources table adds the Fishbone Group's cross-company
-> **Document Register**, adopted at the owner's instruction after the group's policy notice
-> (v1.1) was found sitting in `Raw/`. Detail, including a naming collision to watch for against
-> the existing local `FCD`/`FCT` numbering, is in
+> **Status: AUTHORITATIVE. Version 6, 2026-09-09**, superseding v5 of the same day (in
+> `Archive/`). One word changed: §1's live-data-sources table now says write access to the
+> group Document Register is **confirmed**, not untested - a scripted add-then-delete test row
+> proved it, then removed itself; detail in
 > `Wiki/Processes/group-document-numbering-and-filing.md` and
-> `Wiki/Decisions/2026-09-09-group-document-numbering-policy-adopted.md`; nothing else in this
-> file changes. v4 superseded v3 of 2026-09-05, which added the **Assets** wiki category and
+> `Wiki/Decisions/2026-09-09-group-document-numbering-policy-adopted.md`. v5 added that table
+> row in the first place, adopting the Fishbone Group's cross-company **Document Register**
+> policy (v1.1) at the owner's instruction after its policy notice was found sitting in `Raw/`,
+> including a naming collision to watch for against the existing local `FCD`/`FCT` numbering.
+> v4 superseded v3 of 2026-09-05, which added the **Assets** wiki category and
 > `Raw/Vehicles/`, for the owner's three company vehicles (one confirmed so far), and recorded
 > that v3 itself had been edited in place on 2026-09-06 - the operational-update banner, the §5
 > strikethrough and the §7 qualification below were added directly to the live file, without
@@ -147,7 +149,7 @@ Two rules on archive hygiene, inherited:
 | Bank transactions | None live. HSBC CSV exports dropped into `Raw/Finance/` | Snapshots; process as Raw items. Six months processed, 22 Feb to 21 Aug 2026. Next file expected: 22 Aug to 21 Sep. |
 | Document capture | Dext | **Failing since 24 August 2026.** Uploads error. Until fixed, invoices arrive by hand. |
 | Companies House filings | None live. Company number **07948220** | Late-filing penalties of £375 and £150 charged 20 April 2026, so filing dates are not being met. Check manually. |
-| Cross-company document register | Fishbone Group **Document Register** (Smartsheet, sheet id `7352854736144260`), workspace "Fishbone Group - Documents" | **Adopted 2026-09-09 (policy v1.1).** This company's prefix is `FC` - distinct from the pre-existing local `FCD`/`FCT` numbering in the Construction Smartsheet workspace, which keeps working for existing entries; new qualifying documents route to the group register from here. Read access confirmed; write access not yet tested. Rules: `Wiki/Processes/group-document-numbering-and-filing.md`. |
+| Cross-company document register | Fishbone Group **Document Register** (Smartsheet, sheet id `7352854736144260`), workspace "Fishbone Group - Documents" | **Adopted 2026-09-09 (policy v1.1).** This company's prefix is `FC` - distinct from the pre-existing local `FCD`/`FCT` numbering in the Construction Smartsheet workspace, which keeps working for existing entries; new qualifying documents route to the group register from here. Read and write access both confirmed 2026-09-09. Rules: `Wiki/Processes/group-document-numbering-and-filing.md`. |
 
 When a live source exists, pull it fresh each session and log the sync in the change log even
 if nothing changed, so the next session knows how fresh the Wiki is.
@@ -396,14 +398,15 @@ promoted the two below, which had been second and third.
 
 ---
 
-*Standing context for the Fishbone Construction Ltd knowledge base. Version 5, 2026-09-09,
-superseding v4 of the same day, v3 of 2026-09-05 (which was itself edited in place on
-2026-09-06 - see the header and §6d rule 5), and v2 and v1 before it. See
+*Standing context for the Fishbone Construction Ltd knowledge base. Version 6, 2026-09-09,
+superseding v5 of the same day, v4 of the same day, v3 of 2026-09-05 (which was itself edited
+in place on 2026-09-06 - see the header and §6d rule 5), and v2 and v1 before it. See
 `Wiki/Decisions/2026-09-05-kb-skeleton-adopted.md`,
 `Wiki/Decisions/2026-09-09-assets-category-and-vehicles-workspace.md`,
 `Wiki/Decisions/2026-09-09-group-document-numbering-policy-adopted.md`,
 `Outputs/change-log-2026-09-05-kb-skeleton-and-raw-tidy.md`,
 `Outputs/change-log-2026-09-05-wiki-from-bank-data.md`,
 `Outputs/change-log-2026-09-05-macdonald-answered.md`,
-`Outputs/change-log-2026-09-09-vehicle-workspace-created.md` and
-`Outputs/change-log-2026-09-09-group-document-numbering-adopted.md`.*
+`Outputs/change-log-2026-09-09-vehicle-workspace-created.md`,
+`Outputs/change-log-2026-09-09-group-document-numbering-adopted.md` and
+`Outputs/change-log-2026-09-09-group-document-numbering-write-access-confirmed.md`.*

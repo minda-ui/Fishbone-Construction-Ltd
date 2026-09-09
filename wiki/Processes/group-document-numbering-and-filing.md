@@ -34,11 +34,13 @@ Documents"** workspace:
 Title | Entities involved | Description | Status | Source key | File link | Location`.
 
 This KB **reads** it (to check whether a document is already registered) and **appends its own
-rows**. Never edit or delete another entity's row. **Read access confirmed 2026-09-09** (0 rows
-in the sheet at that point - it is new); **write/Editor access has not yet been tested**. Per
-the policy's own adoption steps, the owner ("Minda") was arranging Editor shares for automation
-accounts at the time this was written - confirm access before writing the first row rather than
-assuming it.
+rows**. Never edit or delete another entity's row. **Read and write access both confirmed
+2026-09-09.** Read: the sheet was empty when first checked. Write: a scripted add-then-delete
+test (a row tagged `TEST-ACCESS-CHECK`, `Entity = FC`, `Status = Void`, added then immediately
+removed) confirmed this KB's connection can add and delete rows on the shared sheet. By the time
+of the write test, Amfa Furniture Ltd had already added its own first real row (`FA0000001`,
+its change-of-name certificate) as an end-to-end proof of concept - the test row was added,
+verified, and removed without disturbing it.
 
 ## This KB's prefix, and a naming collision to watch for
 
@@ -137,8 +139,6 @@ policy version and notifies every KB to adopt it.
 ## Open questions
 
 - No timeline has been given for when the group will migrate the local `FCD` back-catalogue.
-- Editor/write access to the group workspace is not yet confirmed for this KB's automation -
-  confirm before the first write, per the caveat above.
 - Whether every existing `FCD` entry should be cross-registered in the group register retroactively,
   or only left for the group's own migration, is not yet decided; not done without an instruction.
 
@@ -158,4 +158,5 @@ relocated.
 
 | Date | Change | Change-log ref |
 |---|---|---|
+| 2026-09-09 | Write access confirmed by a scripted add-then-delete test; open questions updated | `Outputs/change-log-2026-09-09-group-document-numbering-write-access-confirmed.md` |
 | 2026-09-09 | Created; policy v1.1 adopted | `Outputs/change-log-2026-09-09-group-document-numbering-adopted.md` |
