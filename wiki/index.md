@@ -14,6 +14,11 @@ Line format: `- [Title](Category/file-name.md) - one-line description`
 > [Debt service](Finance/debt-service.md) →
 > [Related-party funding](Finance/related-party-funding.md).
 
+## Assets
+
+- [Vehicles](Assets/vehicles.md) - `draft`. The company owns or leases 3 vehicles; 1 of 3
+  identified so far (Ford Transit HT22BWP, MotoNovo HP). Workspace: `Raw/Vehicles/`
+
 ## Contracts
 
 _(none yet: no customer contract, subcontract agreement, lease or facility agreement is held in
@@ -28,6 +33,7 @@ are unknown.)_
 ## Decisions
 
 - [Standard KB skeleton adopted](Decisions/2026-09-05-kb-skeleton-adopted.md) - what was copied from the Fishbone Commercial Properties Ltd model, what was changed for a trading company, and what was deliberately left alone
+- [Assets category and vehicles workspace](Decisions/2026-09-09-assets-category-and-vehicles-workspace.md) - why vehicle records get a new `Assets` category rather than sitting in `Finance/`, and why the Haydock machinery is not folded in now
 
 ## Finance
 
@@ -45,6 +51,7 @@ and have no article of their own)_
 
 ## Processes
 
+- [Email intake, document register and tasks](Processes/email-to-tasks.md) - info mailbox only; live Construction registers and evidence-based follow-ups
 - [Data capture and accounting systems](Processes/data-capture-and-accounting-systems.md) - Dext and the QuickBooks bank feed are both broken and nothing alerted anyone; the QuickBooks integrity defects
 
 ## Projects
@@ -82,6 +89,9 @@ category folder or in Markdown. In this git mirror they appear as `wiki/*.md` at
   nothing is recorded that would replace them. The 13-week cash flow forecast of 4 September
   rests on a superseded receipts assumption, was built before that was known, and has not been
   re-issued.
+- **Vehicles #2 and #3 are not yet identified**, and it is not yet known whether Tower Leasing
+  (one £373 bank payment in August; a separate £283.20 overdue-invoice task under agreement
+  431484) is one of them. → `Wiki/Assets/vehicles.md`
 
 ---
 

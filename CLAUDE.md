@@ -1,17 +1,26 @@
 # Fishbone Construction Ltd - Knowledge Base
 
-> **Status: AUTHORITATIVE. Version 3, 2026-09-05**, superseding v2 of the same day (in
-> `Archive/`). V2's §7 listed "why did Macdonald Joinery stop paying?" as the first open
-> question. The owner answered it that evening - the customer has no projects - so §7 is
-> rewritten around what that leaves open. V2 itself superseded v1, whose §7 said the wiki was
-> "almost empty" four hours before twelve articles were built. Sections 0 to 6 are unchanged
-> since v1 apart from §1's folder tree.
+> **Status: AUTHORITATIVE. Version 4, 2026-09-09**, superseding v3 of 2026-09-05 (in
+> `Archive/`). Two changes: §1 adds the **Assets** wiki category and `Raw/Vehicles/`, for the
+> owner's three company vehicles (one confirmed so far); and this note records that v3 itself
+> was edited in place on 2026-09-06 - the operational-update banner, the §5 strikethrough and
+> the §7 qualification below were added directly to the live file, without archive-then-recreate
+> and without a version bump. The edit was traced, read in full alongside the Wiki article it
+> points at, and found to be genuine, careful work (a Construction Smartsheet email-intake
+> pipeline, properly sourced) - not reverted. But the file that states archive-then-recreate as
+> a rule should not itself be the one place the rule was skipped, so it is noted here per §6d
+> rule 2 (retract in place, don't delete) rather than silently absorbed. v3 superseded v2, whose
+> §7 listed "why did Macdonald Joinery stop paying?" as the first open question, answered that
+> evening. v2 superseded v1, whose §7 said the wiki was "almost empty" four hours before twelve
+> articles were built.
 > Modelled on the live `CLAUDE.md` of the `Fishbone Commercial Properties Ltd - Knowledge Base`.
 > The rules in sections 1, 2, 4 and 6d were adopted from that file rather than re-derived,
 > because each of them has a real failure behind it and those failures are recorded there. What
 > is added here is specific to this company: it trades, it has projects, subcontractors,
 > suppliers and lenders, and its knowledge base has a job the other two do not - see section 0.
 > `README.md` is a short pointer to this file. Where the two differ, this file wins.
+
+> **Operational update, 2026-09-06:** The owner authorised a separate Construction Smartsheet workspace and the housekeeping process, then restricted it to **info@fishboneconstruction.co.uk only**. Minda's separate mailbox is excluded. The owner also waived all mirror requirements; historical mirror instructions below do not apply. Read [Email intake, document register and tasks](Wiki/Processes/email-to-tasks.md) for the live sheet IDs, numbering, ownership, task-write/closure authority and safe archive procedure. Daily intake is scheduled at 07:00 local time (construction-info-inbox); the first unattended run is not yet verified. The historical no-automation statements below are superseded for this routine only.
 
 This file gives Claude the context it needs to work in this knowledge base without
 re-explaining the setup each session: what this KB is for (§0), where the database lives (§1),
@@ -75,10 +84,12 @@ Fishbone Construction Ltd - Knowledge Base/
 ├── README.md        <- short human-facing pointer to this file
 ├── Archive/         <- superseded versions of replaced files, each named with its reason
 ├── Raw/             <- source material exactly as received; never edited
+│   ├── Email/                          <- captured message evidence, Construction intake pilot
 │   ├── Finance/                        <- HSBC 04212819 statement CSVs
-│   └── FP 2401_131 Goathland Avenue/   <- project invoices, one folder per supplier + INDEX.md
+│   ├── FP 2401_131 Goathland Avenue/   <- project invoices, one folder per supplier + INDEX.md
+│   └── Vehicles/                       <- one folder per vehicle + INDEX.md; see Wiki/Assets/
 ├── Wiki/            <- index.md, _templates/, and one article per entity or topic in:
-│   │                   Customers/ Decisions/ Finance/ Processes/ Projects/ Suppliers/
+│   │                   Assets/ Customers/ Decisions/ Finance/ Processes/ Projects/ Suppliers/
 │   │                   (Contracts/ and People/ are named in index.md but hold nothing yet)
 │   └── (five legacy Google Docs still sit at the Wiki root - see index.md, "Unfiled")
 └── Outputs/         <- deliverables built from the Wiki, the dated change-log entries,
@@ -93,9 +104,14 @@ folder that is reorganised gets an `INDEX.md` recording what each file is, becau
 the reorganisation is to make the folder legible and a move without a record does the opposite.
 
 **Wiki/** holds Markdown articles with the front matter in `Wiki/_templates/article.md`. Every
-article is listed in `Wiki/index.md`. Categories: Contracts, Customers, Decisions, Finance,
-People, Processes, Projects, Suppliers. Five legacy Google Docs still sit at the root of
-`Wiki/` and are listed in `index.md` under "Unfiled" - see its open questions.
+article is listed in `Wiki/index.md`. Categories: Assets, Contracts, Customers, Decisions,
+Finance, People, Processes, Projects, Suppliers. Five legacy Google Docs still sit at the root
+of `Wiki/` and are listed in `index.md` under "Unfiled" - see its open questions.
+
+**Assets** is for company-owned physical assets - vehicles so far - kept apart from `Finance/`
+deliberately: a vehicle article is about the asset (insurance, MOT, mileage, condition), not
+about how it was financed, which is the group Loans database's material and stays there,
+linked rather than copied. See `Wiki/Decisions/2026-09-09-assets-category-and-vehicles-workspace.md`.
 
 **Outputs/** are snapshots. Anything worth keeping is written into the Wiki, not left in
 Outputs. Standing always-current files are a deliberate exception to the write-once rule:
@@ -234,8 +250,9 @@ replaced by archive-then-recreate when a row is added:
 
 ## 5. Automated processes
 
-**None are live.** Everything below is a proposal, in priority order, and each must satisfy §6a
-before it is created.
+~~**None are live.**~~ Corrected 2026-09-06: Construction info inbox intake is scheduled; see the
+operational update and Wiki process. Everything in the following original table remains a
+proposal, in priority order, and each must satisfy §6a before it is created.
 
 | Proposed routine | Cadence | Would do | Prerequisite |
 |---|---|---|---|
@@ -299,6 +316,13 @@ of this file goes through archive-then-recreate and gets a change-log entry.
    where three existed. The correction created the fourth.*
 4. **Detailed rule sets live in the Wiki, not here.** When a rule needs more than a short
    paragraph, put it in a `Wiki/Processes/` article and link to it.
+5. **Archive-then-recreate applies to this file too, with no exceptions for a well-intentioned
+   edit.** *Breached between 2026-09-05 and 2026-09-09: v3 was edited in place (the operational
+   banner, §5 and §7) with no archived predecessor and no version bump - the work behind the
+   edit was genuine and careful, which is exactly why the process gap could have gone unnoticed
+   indefinitely. Caught only because a routine edit session diffed the live file's byte size
+   against what it expected to find.* If a change is worth making to this file, it is worth
+   the thirty seconds archive-then-recreate costs.
 
 ---
 
@@ -317,8 +341,10 @@ citations.
 - **What happened** The only substantial customer, Macdonald Joinery, cut its payments 86% in a
   single month in May 2026 and has paid about £8,000 a month since. **The owner confirmed on
   2026-09-05 that the customer has no projects** - no work to place. Not a dispute, not a lost
-  contract, not a withheld payment, so there is nothing to chase or resolve. Whether it is
-  temporary is not known. → `Wiki/Customers/macdonald-joinery.md`
+  contract, not a withheld payment, ~~so there is nothing to chase or resolve.~~ Qualification
+  2026-09-06: the info-mailbox pilot found August work correspondence and invoice FC0236 due
+  11 September; receipt requires reconciliation. This does not establish future work. See
+  Wiki/Processes/email-to-tasks.md. Whether it is temporary is not known. → `Wiki/Customers/macdonald-joinery.md`
 - **The cost base worked** Subcontractors and materials fell from £62,721 a month to £18,647,
   tracking revenue down. Payroll held flat at about £9,100.
   → `Wiki/Suppliers/subcontractors.md`
@@ -363,9 +389,12 @@ promoted the two below, which had been second and third.
 
 ---
 
-*Standing context for the Fishbone Construction Ltd knowledge base. Version 3, 2026-09-05,
-superseding v2 and v1 of the same day. See
+*Standing context for the Fishbone Construction Ltd knowledge base. Version 4, 2026-09-09,
+superseding v3 of 2026-09-05 (which was itself edited in place on 2026-09-06 - see the header
+and §6d rule 5) and v2 and v1 before it. See
 `Wiki/Decisions/2026-09-05-kb-skeleton-adopted.md`,
+`Wiki/Decisions/2026-09-09-assets-category-and-vehicles-workspace.md`,
 `Outputs/change-log-2026-09-05-kb-skeleton-and-raw-tidy.md`,
-`Outputs/change-log-2026-09-05-wiki-from-bank-data.md` and
-`Outputs/change-log-2026-09-05-macdonald-answered.md`.*
+`Outputs/change-log-2026-09-05-wiki-from-bank-data.md`,
+`Outputs/change-log-2026-09-05-macdonald-answered.md` and
+`Outputs/change-log-2026-09-09-vehicle-workspace-created.md`.*

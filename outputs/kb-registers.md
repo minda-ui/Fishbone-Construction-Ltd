@@ -14,6 +14,10 @@ correction is a new entry that references the old one.
 
 | Date | Entry | File |
 |---|---|---|
+| 2026-09-09 | Assets category and Vehicles workspace created; `CLAUDE.md` replaced by v4 | `Outputs/change-log-2026-09-09-vehicle-workspace-created.md` |
+| 2026-09-08 | Morning intake; SiteDocs progress and three follow-ups | `Outputs/change-log-2026-09-08-morning-intake.md` |
+| 2026-09-06 | Info-only Smartsheet workspace, eight tasks, archive pilot and scheduled intake | `Outputs/change-log-2026-09-06-info-workspace-setup.md` |
+| 2026-09-06 | Construction inbox housekeeping review; proposal only | `Outputs/change-log-2026-09-06-inbox-housekeeping-review.md` |
 | 2026-09-05 | Macdonald Joinery: the owner answered why | `Outputs/change-log-2026-09-05-macdonald-answered.md` |
 | 2026-09-05 | Drive mirrored to the git repository | `Outputs/change-log-2026-09-05-git-mirror.md` |
 | 2026-09-05 | Wiki built from the six months of bank data - 12 articles, 5 categories | `Outputs/change-log-2026-09-05-wiki-from-bank-data.md` |
@@ -36,6 +40,10 @@ Status: `pending` = registered, not started · `partial` = started, work remains
 
 | Raw path | Processed (date) | Status | Wiki articles created / updated | Notes |
 |---|---|---|---|---|
+| `Raw/Vehicles/INDEX.md` | 2026-09-09 | skipped | none | Folder index written by this KB, not source material. Registered so §3b Detect does not re-flag it. |
+| `Raw/Email/2026-09-09-morning-intake.json` | 2026-09-09 | pending | Processes/email-to-tasks | Four selected message bodies. |
+| `Raw/Email/2026-09-08-morning-intake.json` | 2026-09-08 | partial | Processes/email-to-tasks | Eight bodies captured, three new tasks; portal and attachment evidence pending. |
+| `Raw/Email/2026-09-06-info-pilot.json` | 2026-09-06 | partial | Processes/email-to-tasks | Fourteen message bodies captured; eight follow-ups. Attachments, entity routing and complete source review remain pending. |
 | `Raw/Finance/20260321_04212819.csv` | 2026-09-05 | done | Finance/hsbc-current-account, Finance/trading-receipts, Finance/debt-service, Finance/funding-circle-flexipay, Finance/related-party-funding, Finance/hmrc, Customers/macdonald-joinery, Customers/at-uk-interiors, Suppliers/subcontractors, Suppliers/trade-suppliers | HSBC 04212819, 22 Feb to 21 Mar 2026. Categorised and reconciled to every printed balance. Sensitive: financial data. Drive-only. |
 | `Raw/Finance/20260421_04212819.csv` | 2026-09-05 | done | same as above | HSBC 04212819, 22 Mar to 21 Apr 2026. |
 | `Raw/Finance/20260521_04212819.csv` | 2026-09-05 | done | same as above | HSBC 04212819, 22 Apr to 21 May 2026. |
@@ -50,6 +58,10 @@ Status: `pending` = registered, not started · `partial` = started, work remains
 **The six Finance CSVs moved from `partial` to `done` on 2026-09-05.** They were `partial`
 because their findings existed only in change-log entries, which are never revised. Twelve wiki
 articles now carry them.
+
+**`Raw/Vehicles/` is a live intake point.** The owner will upload vehicle documents into it over
+time; each new document should get its own row here (`pending` on arrival) per §3b, and the
+folder's own `INDEX.md` should be kept current alongside this table.
 
 ## Wiki structure changes
 
@@ -66,15 +78,20 @@ articles now carry them.
 | 2026-09-05 | `Wiki/Decisions/2026-09-05-kb-skeleton-adopted.md` re-issued; previous copy archived | Its open question about the empty wiki was answered by the 12 articles built four hours later. Found while mirroring to git |
 | 2026-09-05 | Whole knowledge base mirrored to `minda-ui/Fishbone-Construction-Ltd`; `wiki/change-log.md` and the Goathland instructions mirror brought up to date | The repo carried only the five legacy documents as at 2026-09-02. Two deviations recorded in the entry: `Archive/` is mirrored as a manifest, and path case differs |
 | 2026-09-05 | `Wiki/Customers/macdonald-joinery.md` re-issued; `CLAUDE.md` replaced by v3; `Wiki/index.md` re-issued. All three previous copies archived | The owner answered why Macdonald Joinery stopped paying. §7's first open question closed and replaced by "what replaces the revenue?" |
+| 2026-09-06 | Created `Wiki/Processes/email-to-tasks.md`; indexed in `index.md`; `Raw/Email/` established as the source folder for captured message bodies | Owner-authorised Construction Smartsheet workspace and info-mailbox intake pipeline. `CLAUDE.md` was updated in place with an operational-update banner rather than through archive-then-recreate - see the 2026-09-09 row below |
+| 2026-09-09 | Created `Wiki/Assets/` category and `Wiki/Assets/vehicles.md`; created `Wiki/Decisions/2026-09-09-assets-category-and-vehicles-workspace.md`; created `Raw/Vehicles/` with `INDEX.md`; `CLAUDE.md` replaced by v4 (folding in the 2026-09-06 in-place edit through archive-then-recreate, and adding §6d rule 5 on that gap); `Wiki/index.md` and this file re-issued | Owner: the company owns or leases 3 vehicles and wants a dedicated workspace; documents will be registered here as uploaded and added to Smartsheet later |
 
 ## Outputs produced
 
 | Output path | Date | Built from | Requested by |
 |---|---|---|---|
+| `Outputs/inbox-housekeeping-plan-2026-09-06.md` | 2026-09-06 | Construction mailbox and sister-KB procedures; proposal only | Owner |
+| `info-mailbox-archive-pilot-2026-09-06.json` | 2026-09-06 | Info-mailbox pilot run (immutable rollback manifest) | Owner |
+| `inbox-processing-state.json` | 2026-09-06 | Info-mailbox pilot run (standing partial intake state) | Owner |
 | `Fishbone Construction - Solvency Briefing v2 - 4 Sep 2026.docx` | 2026-09-04 | The June-August bank categorisation and the group Loans database | Owner |
 | `Fishbone 13-Week Cash Flow Forecast.xlsx` | 2026-09-04 | The same categorisation, driven from an editable assumptions sheet | Owner |
 
-**Both of these still exist only outside this knowledge base**, and both are now doubly out of
-date: they rest on a trading receipts assumption of £16,855 a month that
+**Both of the last two still exist only outside this knowledge base**, and both are now doubly
+out of date: they rest on a trading receipts assumption of £16,855 a month that
 `Wiki/Finance/trading-receipts.md` supersedes, and they were built before it was known that the
 customer behind most of that figure has no projects. Filing them should mean re-issuing them.
