@@ -136,11 +136,26 @@ policy version and notifies every KB to adopt it.
 - The `FCT` Tasks sheet is a task-tracking mechanism, not a document register, and is unaffected
   by this policy either way.
 
+## First real registration: `FC0000001`
+
+2026-09-09, at the owner's instruction: the MSEM UK Ltd v Fishbone Construction Ltd County
+Court claim (019JE538)'s **Claim form** - the document that started the case, already local as
+`FCD0000018` - registered as `FC0000001`. It was already filed correctly in Collaboration Space
+(`Fishbone Construction / C Legal & Court Cases / MSEM UK Ltd Claim – BBC Cardiff/`); only a
+rename to the `<ID> - <Category> - <Short Title>` convention was needed, done in place (same
+Drive file id). The local `FCD0000018` row was updated to cross-reference `FC0000001`. Detail:
+`Outputs/change-log-2026-09-09-first-group-register-document.md`.
+
+Only the Claim form was registered - the case's other local documents (`FCD0000015`-`FCD0000023`)
+were not also given group numbers. That is a deliberate limit, not an oversight: see the open
+questions below.
+
 ## Open questions
 
 - No timeline has been given for when the group will migrate the local `FCD` back-catalogue.
-- Whether every existing `FCD` entry should be cross-registered in the group register retroactively,
-  or only left for the group's own migration, is not yet decided; not done without an instruction.
+- Whether the rest of this same case's documents (and the rest of the `FCD` back-catalogue
+  generally) should be cross-registered in the group register now, or left entirely for the
+  group's own migration, is not yet decided; not done without an instruction.
 
 ## Sources
 
@@ -158,5 +173,6 @@ relocated.
 
 | Date | Change | Change-log ref |
 |---|---|---|
+| 2026-09-09 | First real document registered (`FC0000001`, the MSEM claim form) | `Outputs/change-log-2026-09-09-first-group-register-document.md` |
 | 2026-09-09 | Write access confirmed by a scripted add-then-delete test; open questions updated | `Outputs/change-log-2026-09-09-group-document-numbering-write-access-confirmed.md` |
 | 2026-09-09 | Created; policy v1.1 adopted | `Outputs/change-log-2026-09-09-group-document-numbering-adopted.md` |

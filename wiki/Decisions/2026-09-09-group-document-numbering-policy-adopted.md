@@ -55,16 +55,29 @@ would be exactly the kind of "invent a local variation" the policy explicitly ru
   `Raw/` (`CLAUDE.md` §1) takes precedence for this KB's own files. It stays in place, logged as
   `skipped` (not source material) in `Outputs/kb-registers.md`.
 
+## First real registration, and why only one document
+
+2026-09-09, at the owner's instruction: registered `FC0000001`, the MSEM UK Ltd v Fishbone
+Construction Ltd Claim form (County Court claim 019JE538) - the document that started that
+case, already local as `FCD0000018`. It was already correctly filed in Collaboration Space;
+only a rename to the ID convention was needed. **Deliberately registered only this one
+document**, not the case's other local entries (`FCD0000015`-`FCD0000023`): the instruction was
+to register "the MSEM court claim," and the case's single originating document is the natural
+representative of it. Registering the rest of an already-large case's paper trail on the same
+initiative would have gone beyond what was asked, and duplicated work the group's own
+back-catalogue migration is meant to do. Detail:
+`Outputs/change-log-2026-09-09-first-group-register-document.md`.
+
 ## Open question
 
-The access test used a placeholder row, not a real document. The next genuinely qualifying
-document (a lease, loan document, board letter, etc. per the Processes article's list) is still
-the first real use of the register end-to-end - registering it, filing the file in
-Collaboration Space, and getting the row's `File link`/`Location` right.
+Whether the case's other documents (and the rest of the local `FCD` back-catalogue generally)
+should be cross-registered in the group register now, or left for the group's own migration, is
+still open; not done without an instruction.
 
 ## Changes
 
 | Date | Change | Change-log ref |
 |---|---|---|
+| 2026-09-09 | First real document registered | `Outputs/change-log-2026-09-09-first-group-register-document.md` |
 | 2026-09-09 | Write access confirmed | `Outputs/change-log-2026-09-09-group-document-numbering-write-access-confirmed.md` |
 | 2026-09-09 | Created | `Outputs/change-log-2026-09-09-group-document-numbering-adopted.md` |
