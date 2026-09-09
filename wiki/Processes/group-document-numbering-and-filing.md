@@ -169,12 +169,31 @@ This shows the previous section's "deliberate limit" was exactly that - a limit 
 instruction given at the time, lifted the moment a broader instruction was given. It was not a
 policy position that only originating documents get registered.
 
+## The rest of the local back-catalogue: raised, not migrated (`FC-CR-0001`)
+
+2026-09-09, later the same day again: the owner asked to migrate the rest of the local `FCD`
+back-catalogue too. Checking it first (23 rows total; 9 now `FC0000001`-`FC0000009`) found the
+remaining 14 (`FCD0000001`-`FCD0000014`) are not documents in the sense the MSEM ones were:
+each is a task/email-tracking row from the Construction info-mailbox pipeline, its `File link`
+is a Gmail message URL with no stored file or Drive file id, and its Description says the
+underlying attachment or record is "not yet filed/validated" or "not verified". Titles read as
+action items ("Reconcile Tower Leasing invoice 916284 overdue notice", "Verify Forth England
+INV-1627 payment and filing") rather than document titles - closer to the local `FCT` Tasks
+mechanism than to a registrable document.
+
+**Not migrated.** Raised instead as `FC-CR-0001` on the group's Document System - Change
+Requests sheet: whether these 14 rows qualify for the group register at all (policy v1.1
+excludes "routine automated notifications" and asks that anything unclear be raised, not
+guessed), and, separately, whether this KB is expected to run any part of the back-catalogue
+migration or wait for a group-run pass with its own dedup. This follows the policy's own
+"do not fork the rules... raise a row" instruction rather than deciding unilaterally. Detail:
+`Outputs/change-log-2026-09-09-back-catalogue-change-request-raised.md`.
+
 ## Open questions
 
-- No timeline has been given for when the group will migrate the local `FCD` back-catalogue.
-- Whether the rest of the `FCD` back-catalogue generally (documents outside this one case) should
-  be cross-registered in the group register now, or left entirely for the group's own migration,
-  is not yet decided; not done without an instruction.
+- `FC-CR-0001` is open on the group's Change Requests sheet; no response yet.
+- No timeline has been given for when the group will migrate the local `FCD` back-catalogue,
+  or whether task/email-tracking rows like `FCD0000001`-`FCD0000014` are even in scope for it.
 
 ## Sources
 
@@ -192,6 +211,7 @@ relocated.
 
 | Date | Change | Change-log ref |
 |---|---|---|
+| 2026-09-09 | Rest of the local `FCD` back-catalogue: raised as `FC-CR-0001`, not migrated | `Outputs/change-log-2026-09-09-back-catalogue-change-request-raised.md` |
 | 2026-09-09 | Rest of the MSEM case registered (`FC0000002`-`FC0000009`) | `Outputs/change-log-2026-09-09-msem-case-documents-registered.md` |
 | 2026-09-09 | First real document registered (`FC0000001`, the MSEM claim form) | `Outputs/change-log-2026-09-09-first-group-register-document.md` |
 | 2026-09-09 | Write access confirmed by a scripted add-then-delete test; open questions updated | `Outputs/change-log-2026-09-09-group-document-numbering-write-access-confirmed.md` |

@@ -81,16 +81,35 @@ register - the first as routine personal-data minimisation, the second because a
 credential has no place in a register seven companies can read. Detail:
 `Outputs/change-log-2026-09-09-msem-case-documents-registered.md`.
 
+## The rest of the local back-catalogue: raised, not migrated
+
+Later the same day, asked to migrate the rest of the local `FCD` back-catalogue too (14 rows,
+`FCD0000001`-`FCD0000014`, outside the MSEM case). Checked them first rather than assuming they
+were documents: each is a task/email-tracking row from the Construction info-mailbox pipeline
+with a Gmail message link as its only "file" and an explicit note that the underlying
+attachment is unfiled or unverified - closer to the local `FCT` Tasks mechanism than to a
+registrable document, and the kind of thing policy v1.1 says to raise rather than guess about.
+
+**Decision: don't migrate them; raise a Change Request instead.** Filed `FC-CR-0001` on the
+group's Document System - Change Requests sheet, asking (1) whether rows like these qualify for
+the group register at all, and (2) whether this KB is expected to run any part of the
+back-catalogue migration or wait for a group-run pass. This follows the policy's own feedback
+channel rather than deciding the question unilaterally - the same reasoning that kept this KB
+from running the whole back-catalogue migration itself in the first place. The 14 rows remain
+local-only for now. Detail:
+`Outputs/change-log-2026-09-09-back-catalogue-change-request-raised.md`.
+
 ## Open question
 
-Whether the rest of the local `FCD` back-catalogue - documents outside this one case - should be
-cross-registered in the group register now, or left for the group's own migration, is still
-open; not done without an instruction.
+`FC-CR-0001` is open on the group's Change Requests sheet; no response yet. Whether it comes
+back "yes, register the genuine documents among them" or "no, that's not this register's job"
+will settle both the migration timeline and what counts as a document for this purpose.
 
 ## Changes
 
 | Date | Change | Change-log ref |
 |---|---|---|
+| 2026-09-09 | Rest of the local `FCD` back-catalogue: raised as `FC-CR-0001`, not migrated | `Outputs/change-log-2026-09-09-back-catalogue-change-request-raised.md` |
 | 2026-09-09 | Rest of the MSEM case registered (`FC0000002`-`FC0000009`) | `Outputs/change-log-2026-09-09-msem-case-documents-registered.md` |
 | 2026-09-09 | First real document registered | `Outputs/change-log-2026-09-09-first-group-register-document.md` |
 | 2026-09-09 | Write access confirmed | `Outputs/change-log-2026-09-09-group-document-numbering-write-access-confirmed.md` |
