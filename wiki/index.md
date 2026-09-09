@@ -34,6 +34,7 @@ are unknown.)_
 
 - [Standard KB skeleton adopted](Decisions/2026-09-05-kb-skeleton-adopted.md) - what was copied from the Fishbone Commercial Properties Ltd model, what was changed for a trading company, and what was deliberately left alone
 - [Assets category and vehicles workspace](Decisions/2026-09-09-assets-category-and-vehicles-workspace.md) - why vehicle records get a new `Assets` category rather than sitting in `Finance/`, and why the Haydock machinery is not folded in now
+- [Group document-numbering policy adopted](Decisions/2026-09-09-group-document-numbering-policy-adopted.md) - why the group's new `FC`-prefixed register sits alongside the existing local `FCD`/`FCT` numbering rather than replacing it
 
 ## Finance
 
@@ -52,6 +53,7 @@ and have no article of their own)_
 ## Processes
 
 - [Email intake, document register and tasks](Processes/email-to-tasks.md) - info mailbox only; live Construction registers and evidence-based follow-ups
+- [Group document numbering and filing (policy v1.1)](Processes/group-document-numbering-and-filing.md) - the cross-company Document Register, its `FC` prefix, dedup-on-entry, and the inter-KB hand-off procedure
 - [Data capture and accounting systems](Processes/data-capture-and-accounting-systems.md) - Dext and the QuickBooks bank feed are both broken and nothing alerted anyone; the QuickBooks integrity defects
 
 ## Projects
