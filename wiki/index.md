@@ -62,6 +62,7 @@ and have no article of their own)_
 
 ## Suppliers
 
+- [Kosmosoft SmartCABINET software purchase](Suppliers/kosmosoft-smartcabinet.md) - Offer 22910, confirmed paid by the owner 2026-09-10; exact amount unresolved from OCR
 - [Subcontractors](Suppliers/subcontractors.md) - £190,647 to 68 payees; the cost base that did scale, and the unexamined CIS question
 - [Trade suppliers](Suppliers/trade-suppliers.md) - fifteen merchants; three accounts still in the company's former name
 
