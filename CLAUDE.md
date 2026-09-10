@@ -1,13 +1,24 @@
 # Fishbone Construction Ltd - Knowledge Base
 
-> **Status: AUTHORITATIVE. Version 9, 2026-09-09**, superseding v8 of the same day (in
+> **Status: AUTHORITATIVE. Version 10, 2026-09-10**, superseding v9 of 2026-09-09 (in
 > `Archive/`). One correction: §1's live-data-sources table now says the group Document Register
-> policy is at **v1.2**, not v1.1 - the group accepted this KB's change request (`FC-CR-0001`,
-> raised the same day over whether the local register's remaining 14 task/email rows qualify for
-> the shared register) and issued v1.2 in response, found on a later check of `Raw/`. v1.2
-> confirms tasks are never registered and lets each KB migrate its own back-catalogue whenever
-> ready; net effect here is that nothing is left to migrate (see the Processes and Decisions
-> articles). v8 recorded §1's live-data-sources table gaining the MSEM court case's remaining 8
+> policy is at **v1.3**, not v1.2 - found on a `/Raw` check the day after v9. v1.3 resolves two
+> *other* companies' change requests (`FM-CR-0001`, `FP-CR-0001`; not this KB's) with two
+> clarifications: self-assigned 4-digit property codes (not applicable - this KB owns no
+> property) and a Gmail-thread-id-plus-transcription pattern for email attachments that can't be
+> captured into Drive (directly relevant to this KB's own info-mailbox pipeline, which has
+> carried that exact gap since 2026-09-06 - using the new pattern on the existing backlog is
+> separate, undecided work). The same `/Raw` check also found a new inbound document,
+> `22910 FISHBONE.pdf` - a software quote from Kosmosoft Engineering S.r.l. for "SmartCABINET"
+> CAD/CAM software, addressed to the company's old name; registered `pending` in
+> `Outputs/kb-registers.md`, not yet written into the Wiki or the group register, because its
+> OCR is noisy on the pricing lines and proceeding is the owner's decision, not this KB's to
+> assume. Detail in `Wiki/Processes/group-document-numbering-and-filing.md`,
+> `Wiki/Decisions/2026-09-09-group-document-numbering-policy-adopted.md` and
+> `Outputs/change-log-2026-09-10-v1.3-and-kosmosoft-quote.md`. v9 recorded §1's live-data-sources
+> table correcting the policy version to v1.2 after `FC-CR-0001` (this KB's own change request)
+> was accepted - detail in `Outputs/change-log-2026-09-09-v1.2-adopted.md`. v8 recorded §1's
+> live-data-sources table gaining the MSEM court case's remaining 8
 > local documents (`FCD0000015`-`FCD0000023`, minus `FCD0000018` which was already `FC0000001`),
 > registered as `FC0000002`-`FC0000009`, at the owner's explicit instruction. Detail in
 > `Wiki/Processes/group-document-numbering-and-filing.md`,
@@ -161,7 +172,7 @@ Two rules on archive hygiene, inherited:
 | Bank transactions | None live. HSBC CSV exports dropped into `Raw/Finance/` | Snapshots; process as Raw items. Six months processed, 22 Feb to 21 Aug 2026. Next file expected: 22 Aug to 21 Sep. |
 | Document capture | Dext | **Failing since 24 August 2026.** Uploads error. Until fixed, invoices arrive by hand. |
 | Companies House filings | None live. Company number **07948220** | Late-filing penalties of £375 and £150 charged 20 April 2026, so filing dates are not being met. Check manually. |
-| Cross-company document register | Fishbone Group **Document Register** (Smartsheet, sheet id `7352854736144260`), workspace "Fishbone Group - Documents" | **Adopted 2026-09-09, now at policy v1.2** (v1.1 same day, updated to v1.2 the same day after `FC-CR-0001` was accepted). This company's prefix is `FC` - distinct from the pre-existing local `FCD`/`FCT` numbering in the Construction Smartsheet workspace. Tasks/email pointers with no verified record are never registered (v1.2 §6); each KB may migrate its own back-catalogue whenever ready (v1.2 §11) - for this KB that back-catalogue is already fully accounted for (9 documents as `FC0000001`-`FC0000009`, 14 task rows correctly excluded), so nothing remains to migrate. Read and write access both confirmed 2026-09-09; 9 documents registered the same day, all from the MSEM UK Ltd court case. Rules: `Wiki/Processes/group-document-numbering-and-filing.md`. |
+| Cross-company document register | Fishbone Group **Document Register** (Smartsheet, sheet id `7352854736144260`), workspace "Fishbone Group - Documents" | **Adopted 2026-09-09, now at policy v1.3** (v1.1 → v1.2 same day after `FC-CR-0001`; v1.2 → v1.3 2026-09-10 after two other companies' change requests). This company's prefix is `FC` - distinct from the pre-existing local `FCD`/`FCT` numbering in the Construction Smartsheet workspace. Tasks/email pointers with no verified record are never registered (§6); each KB may migrate its own back-catalogue whenever ready (§11) - for this KB that back-catalogue is already fully accounted for, so nothing remains to migrate; self-assigned 4-digit property codes (§7) don't apply - no property owned; an email-attachment transcription pattern (§5) is now available for the info-mailbox pipeline's unfiled-attachment gap, not yet applied retroactively. Read and write access both confirmed 2026-09-09; 9 documents registered that day, all from the MSEM UK Ltd court case. Rules: `Wiki/Processes/group-document-numbering-and-filing.md`. |
 
 When a live source exists, pull it fresh each session and log the sync in the change log even
 if nothing changed, so the next session knows how fresh the Wiki is.
@@ -410,9 +421,10 @@ promoted the two below, which had been second and third.
 
 ---
 
-*Standing context for the Fishbone Construction Ltd knowledge base. Version 9, 2026-09-09,
-superseding v8, v7, v6, v5 and v4 of the same day, v3 of 2026-09-05 (which was itself edited in
-place on 2026-09-06 - see the header and §6d rule 5), and v2 and v1 before it. See
+*Standing context for the Fishbone Construction Ltd knowledge base. Version 10, 2026-09-10,
+superseding v9 of 2026-09-09, v8, v7, v6, v5 and v4 of that same day, v3 of 2026-09-05 (which
+was itself edited in place on 2026-09-06 - see the header and §6d rule 5), and v2 and v1 before
+it. See
 `Wiki/Decisions/2026-09-05-kb-skeleton-adopted.md`,
 `Wiki/Decisions/2026-09-09-assets-category-and-vehicles-workspace.md`,
 `Wiki/Decisions/2026-09-09-group-document-numbering-policy-adopted.md`,
@@ -423,5 +435,6 @@ place on 2026-09-06 - see the header and §6d rule 5), and v2 and v1 before it. 
 `Outputs/change-log-2026-09-09-group-document-numbering-adopted.md`,
 `Outputs/change-log-2026-09-09-group-document-numbering-write-access-confirmed.md`,
 `Outputs/change-log-2026-09-09-first-group-register-document.md`,
-`Outputs/change-log-2026-09-09-msem-case-documents-registered.md` and
-`Outputs/change-log-2026-09-09-v1.2-adopted.md`.*
+`Outputs/change-log-2026-09-09-msem-case-documents-registered.md`,
+`Outputs/change-log-2026-09-09-v1.2-adopted.md` and
+`Outputs/change-log-2026-09-10-v1.3-and-kosmosoft-quote.md`.*

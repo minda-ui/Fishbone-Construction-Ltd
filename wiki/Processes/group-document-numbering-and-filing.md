@@ -1,32 +1,33 @@
 ---
-title: Group document numbering and filing (policy v1.2)
+title: Group document numbering and filing (policy v1.3)
 category: Processes
 status: active
 sensitive: false
 created: 2026-09-09
-updated: 2026-09-09
+updated: 2026-09-10
 sources:
   - ../../raw/2026-09-09_group-policy_document-numbering-and-filing-v1.1.md
   - ../../raw/2026-09-09_group-policy_document-numbering-and-filing-v1.2.md
+  - ../../raw/2026-09-10_group-policy_document-numbering-and-filing-v1.3.md
 related:
   - ../../CLAUDE.md
   - ../Decisions/2026-09-09-group-document-numbering-policy-adopted.md
   - ../Processes/email-to-tasks.md
 ---
 
-# Group document numbering and filing (policy v1.2)
+# Group document numbering and filing (policy v1.3)
 
-Adopted 2026-09-09 at v1.1; updated the same day to **v1.2**. The Fishbone Group knowledge base
-issued a locked, versioned policy to every group KB (Fishbone Properties, Fishbone Commercial
-Properties, Fishbone Holdings, Fishbone Construction, Fishbone Waste, Amfa Furniture, Fishbone
-SSAS): register every business document across the group **once**, number it consistently, and
-file it with the project or company it belongs to. This article summarises it for this KB; the
-canonical text is `Wiki/Process-Document-Numbering-and-Filing.md` (v1.2) in the Fishbone Group
-database, delivered here as `Raw/2026-09-09_group-policy_document-numbering-and-filing-v1.2.md`
-(v1.1 arrived first, as `Raw/2026-09-09_group-policy_document-numbering-and-filing-v1.1.md`;
-both stay in `Raw/`, per this KB's own immutability rule - see Sources below). **Do not edit or
-fork these rules locally** - raise anything that doesn't fit as a row on the group's Change
-Requests sheet (below); only the group edits the policy.
+Adopted 2026-09-09 at v1.1; updated the same day to v1.2; updated again 2026-09-10 to **v1.3**.
+The Fishbone Group knowledge base issued a locked, versioned policy to every group KB (Fishbone
+Properties, Fishbone Commercial Properties, Fishbone Holdings, Fishbone Construction, Fishbone
+Waste, Amfa Furniture, Fishbone SSAS): register every business document across the group
+**once**, number it consistently, and file it with the project or company it belongs to. This
+article summarises it for this KB; the canonical text is
+`Wiki/Process-Document-Numbering-and-Filing.md` (v1.3) in the Fishbone Group database, delivered
+here as `Raw/2026-09-10_group-policy_document-numbering-and-filing-v1.3.md` (v1.1 and v1.2
+arrived first, on 2026-09-09; all three stay in `Raw/`, per this KB's own immutability rule -
+see Sources below). **Do not edit or fork these rules locally** - raise anything that doesn't
+fit as a row on the group's Change Requests sheet (below); only the group edits the policy.
 
 ## The one register
 
@@ -66,6 +67,16 @@ splitting the sequence). Numbers are **never reused** - a killed or replaced doc
 one. (A document number is 7 digits; a *property* code, e.g. `FP1601`, is 4 - count the digits
 if unsure which you're looking at.)
 
+**Property codes (§3/§7, new in v1.3).** A property code is `<PREFIX>` + **4 digits** =
+2-digit acquisition year + 2-digit sequence (e.g. `FP1601` = acquired 2016, sequence 01). Each
+company **self-assigns** its own property codes on this pattern and records them in its own
+property register - there is no central index and the group does not issue codes.
+Property-tied documents file in Collaboration Space under `<PROPERTY CODE> - <Address>/
+Documents/`; the uncoded `Company/Project/Documents` folder is only for projects that are not a
+property. **Not applicable to this KB**: Fishbone Construction Ltd owns no property (its
+`Assets` Wiki category covers vehicles only - see `Wiki/Assets/vehicles.md`), so it has no
+property codes and no property register to maintain.
+
 ## The anti-duplication rule
 
 `one owning entity → one row → one ID → one stored file`. A document that touches more than one
@@ -95,6 +106,18 @@ document is registered only once a thread yields a verified business record: an 
 file, or an email that is itself the record (its Gmail thread id as `Source key`). This
 clarification came out of `FC-CR-0001` (below) and settles that `FCD0000001`-`FCD0000014`
 correctly stay off the group register.
+
+**Email-attachment source capture (§5, new in v1.3).** When the record *is* an email
+attachment but its bytes can't be captured into Drive (a known limitation of this KB's own
+info-mailbox pipeline - most `Raw/Email/*.json` captures note "Attachments remain in Gmail and
+are not yet filed/validated"), register the row with the **Gmail thread id as `Source key`**
+and a **plain-text transcription** of the attachment as the stored record, flagged as a
+transcription in both the Description and the change-log entry. Dedup still works on the stable
+thread id; if the binary is captured later, attach it and update `File link` without changing
+the ID. This directly addresses the gap the info-mailbox pipeline has carried since 2026-09-06 -
+see [Email intake, document register and tasks](email-to-tasks.md) - though retroactively
+applying it to the existing captured-but-unfiled attachments is a separate piece of work, not
+done as part of adopting this policy update.
 
 ## Filing - with the project, in Collaboration Space
 
@@ -128,7 +151,7 @@ knowledge, **only** like this:
 
 ## Locked rules, one feedback channel
 
-The rules are locked and versioned (currently v1.2). If a document doesn't fit, a rule is
+The rules are locked and versioned (currently v1.3). If a document doesn't fit, a rule is
 ambiguous, or there's an improvement to suggest, **do not fork the rules** - raise a row on the
 group's **Document System - Change Requests** sheet, same workspace:
 [sheet](https://app.smartsheet.eu/sheets/hrx6rP255gm8qVVQgX47GjQmqHGWRf576Vmm5hF1) (sheet id
@@ -212,28 +235,44 @@ point (1) in force, there is no back-catalogue left to migrate - all 23 local `F
 accounted for (9 as group documents, 14 correctly excluded as tasks). Detail:
 `Outputs/change-log-2026-09-09-v1.2-adopted.md`.
 
+## Policy v1.3: property codes and email-attachment transcription
+
+2026-09-10, found on a `/Raw` check requested by the owner: the group delivered **v1.3**,
+resolving two *other* companies' change requests - `FM-CR-0001` (Fishbone Commercial
+Properties) and `FP-CR-0001` (Fishbone Properties), both Accepted 2026-09-10. Neither request
+was raised by this KB, but the resulting clarifications apply group-wide, per the two new
+sections above (property codes; email-attachment transcription). Adopted the same day, per the
+same reasoning as v1.2's own adoption: read it, fold the clarifications into this article and
+`CLAUDE.md`, leave the notice file in `Raw/`. Detail:
+`Outputs/change-log-2026-09-10-v1.3-and-kosmosoft-quote.md`.
+
 ## Open questions
 
 - None outstanding on this policy. `FC-CR-0001` is closed (Accepted, resolved 2026-09-09); the
-  local back-catalogue question is settled with nothing left to migrate.
+  local back-catalogue question is settled with nothing left to migrate. v1.3 raised no question
+  for this KB - property codes don't apply (no property), and the email-attachment
+  transcription pattern is available to use going forward but applying it retroactively to the
+  existing unfiled attachments is separate, undecided work.
 
 ## Sources
 
 The policy text as delivered, in order:
-`Raw/2026-09-09_group-policy_document-numbering-and-filing-v1.1.md` and
-`Raw/2026-09-09_group-policy_document-numbering-and-filing-v1.2.md`. Per their instructions
+`Raw/2026-09-09_group-policy_document-numbering-and-filing-v1.1.md`,
+`Raw/2026-09-09_group-policy_document-numbering-and-filing-v1.2.md` and
+`Raw/2026-09-10_group-policy_document-numbering-and-filing-v1.3.md`. Per their instructions
 ("do not register it on the Document Register and do not assign it a document ID - it is a
-policy notice, not a business document... archive this file per your normal workflow"), both
-have been read and adopted here. Neither has been physically moved or deleted from `Raw/`: this
-KB's own rule that "nothing is deleted or moved out of Raw" (`CLAUDE.md` §1) is stronger and
-more specific than the group notice's generic "archive it," and takes precedence for this KB's
-own files. Both are registered as `skipped` in `Outputs/kb-registers.md`'s Processed items table
-(not source material for the Wiki) rather than relocated.
+policy notice, not a business document... archive this file per your normal workflow"), all
+three have been read and adopted here. None has been physically moved or deleted from `Raw/`:
+this KB's own rule that "nothing is deleted or moved out of Raw" (`CLAUDE.md` §1) is stronger
+and more specific than the group notice's generic "archive it," and takes precedence for this
+KB's own files. All three are registered as `skipped` in `Outputs/kb-registers.md`'s Processed
+items table (not source material for the Wiki) rather than relocated.
 
 ## Changes
 
 | Date | Change | Change-log ref |
 |---|---|---|
+| 2026-09-10 | Policy v1.3 adopted (property codes, email-attachment transcription) | `Outputs/change-log-2026-09-10-v1.3-and-kosmosoft-quote.md` |
 | 2026-09-09 | Policy v1.2 adopted; `FC-CR-0001` resolved (Accepted); no back-catalogue left to migrate | `Outputs/change-log-2026-09-09-v1.2-adopted.md` |
 | 2026-09-09 | Rest of the local `FCD` back-catalogue: raised as `FC-CR-0001`, not migrated | `Outputs/change-log-2026-09-09-back-catalogue-change-request-raised.md` |
 | 2026-09-09 | Rest of the MSEM case registered (`FC0000002`-`FC0000009`) | `Outputs/change-log-2026-09-09-msem-case-documents-registered.md` |

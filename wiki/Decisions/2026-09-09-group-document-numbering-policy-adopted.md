@@ -107,15 +107,28 @@ this KB: nothing was left to migrate - the 14 rows are excluded as tasks regardl
 run a migration, so all 23 local `FCD` rows are now accounted for. Adopted v1.2 into the
 Processes article. Detail: `Outputs/change-log-2026-09-09-v1.2-adopted.md`.
 
+## Policy v1.3 adopted
+
+2026-09-10, on a `/Raw` check: the group delivered v1.3, resolving `FM-CR-0001` and
+`FP-CR-0001` - two other companies' change requests, not this KB's. Two clarifications: property
+codes are 4-digit, self-assigned per company (not applicable here - this KB owns no property);
+and an email-attachment transcription pattern (Gmail thread id as `Source key`, a flagged
+plain-text transcription as the stored record) for cases where attachment bytes can't be
+captured into Drive - directly relevant to this KB's own info-mailbox pipeline, which has
+carried exactly that gap since 2026-09-06. Adopted into the Processes article the same day;
+using the new pattern on the existing backlog of unfiled attachments is separate, undecided
+work. Detail: `Outputs/change-log-2026-09-10-v1.3-and-kosmosoft-quote.md`.
+
 ## Open question
 
 None outstanding. `FC-CR-0001` is closed (Accepted), and the local back-catalogue question is
-settled with nothing left to migrate.
+settled with nothing left to migrate. v1.3 raised nothing new for this KB to decide.
 
 ## Changes
 
 | Date | Change | Change-log ref |
 |---|---|---|
+| 2026-09-10 | Policy v1.3 adopted (property codes - n/a here; email-attachment transcription) | `Outputs/change-log-2026-09-10-v1.3-and-kosmosoft-quote.md` |
 | 2026-09-09 | Policy v1.2 adopted; `FC-CR-0001` resolved (Accepted); no back-catalogue left to migrate | `Outputs/change-log-2026-09-09-v1.2-adopted.md` |
 | 2026-09-09 | Rest of the local `FCD` back-catalogue: raised as `FC-CR-0001`, not migrated | `Outputs/change-log-2026-09-09-back-catalogue-change-request-raised.md` |
 | 2026-09-09 | Rest of the MSEM case registered (`FC0000002`-`FC0000009`) | `Outputs/change-log-2026-09-09-msem-case-documents-registered.md` |
