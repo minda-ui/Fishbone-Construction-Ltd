@@ -4,10 +4,11 @@ category: Suppliers
 status: active
 sensitive: false
 created: 2026-09-10
-updated: 2026-09-10
+updated: 2026-09-11
 sources:
   - ../../raw/22910 FISHBONE.pdf
   - ../../raw/2026-09-10_owner-note_kosmosoft-22910-paid.md
+  - ../../raw/2026-09-11_owner-note_kosmosoft-22910-price-confirmed.md
 related:
   - ../index.md
   - ../Processes/group-document-numbering-and-filing.md
@@ -39,17 +40,21 @@ would be invoiced separately, 30 days after installation.
 ## Confirmed paid
 
 The owner stated on 2026-09-10: *"22910 Fishbone is already paid"* - written up in full at
-`Raw/2026-09-10_owner-note_kosmosoft-22910-paid.md`. This settles that the purchase went ahead;
-it does not state an amount.
+`Raw/2026-09-10_owner-note_kosmosoft-22910-paid.md`. This settled that the purchase went ahead;
+it did not state an amount.
+
+**Amount confirmed 2026-09-11: €1,000.** The owner stated *"It's 1000 euros"* - written up in
+full at `Raw/2026-09-11_owner-note_kosmosoft-22910-price-confirmed.md`. This resolves the OCR
+ambiguity below in favour of the single-figure reading (a duplicated "1.000,00" across the
+scanned form's columns, not three separate €1,000 line items).
 
 ## Open questions
 
-- **What was the actual amount paid?** The scanned document's OCR shows the price field
-  "1.000,00" (EUR) on **three separate lines**, and it is not established whether that means
-  three line items (so a total around €3,000) or a single figure duplicated by the scan (so
-  €1,000). Not resolved from OCR text alone; would need the PDF re-read as a rasterised image,
-  or the owner to state the figure directly. Per `CLAUDE.md` §3d, a noisy OCR figure like this
-  is not quoted as a reliable total.
+~~**What was the actual amount paid?** The scanned document's OCR shows the price field
+"1.000,00" (EUR) on three separate lines, and it is not established whether that means three
+line items (so a total around €3,000) or a single figure duplicated by the scan (so €1,000).~~
+**Answered 2026-09-11: €1,000**, per the owner's statement above. Kept visible per `CLAUDE.md`
+§6d rule 2 rather than deleted.
 - **When was it paid, and through which account?** Not stated. The HSBC bank statements
   processed into this knowledge base (`Raw/Finance/`) run only to 21 August 2026; this
   transaction, dated 10 September 2026, falls outside that range and cannot currently be
@@ -73,4 +78,5 @@ need a `Category` and `Description` decided first, since the exact price is stil
 
 | Date | Change | Change-log ref |
 |---|---|---|
+| 2026-09-11 | Amount confirmed at €1,000 by the owner; local Document Register row updated | `Outputs/change-log-2026-09-11-kosmosoft-price-confirmed.md` |
 | 2026-09-10 | Created; purchase confirmed paid by the owner; registered locally as `FCD0000024` | `Outputs/change-log-2026-09-10-kosmosoft-confirmed-paid.md` |
