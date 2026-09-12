@@ -4,26 +4,27 @@ category: Assets
 status: draft
 sensitive: false
 created: 2026-09-09
-updated: 2026-09-11
+updated: 2026-09-12
 sources:
   - ../../Raw/Vehicles/INDEX.md
   - ../../raw/FCD0000025 - Vehicle - MOT test certificate and refusal notice (Ford Transit NJ17CYK).pdf
   - ../../raw/2026-09-10_handoff_group-to-construction_FC0000010-FC0000011.md
+  - ../../raw/2026-09-12_owner-note_vehicle-fct00020-confirmed-company-van.md
 related:
   - ../Finance/debt-service.md
 ---
 
 # Vehicles
 
-The company owns or leases three vehicles (owner statement, 2026-09-09). One is confirmed and
-documented; two are not yet identified. `draft` until all three are on record.
+The company owns or leases three vehicles (owner statement, 2026-09-09). Two are confirmed and
+documented; one is not yet identified. `draft` until all three are on record.
 
 ## Key facts
 
 | Item | Value | Source |
 |---|---|---|
 | Vehicles, per owner | 3 | [^1] |
-| Confirmed | 1 - Ford Transit, HT22BWP | [^2] |
+| Confirmed | 2 - Ford Transit HT22BWP; a second Ford Transit (company van, per owner) | [^2] [^3] |
 | Held on hire purchase | MotoNovo Finance, 48 months, £459.80/mo | [^2] |
 | Documents | `Raw/Vehicles/` on Drive, one subfolder per vehicle | - |
 | Fleet register | Not yet built. Smartsheet, once all three vehicles and their documents are in | - |
@@ -42,19 +43,16 @@ lending per `CLAUDE.md` §1 - see `Facility — MotoNovo Finance — Hire Purcha
 does not repeat the finance terms; it is the entry point for everything about the vehicle
 itself once documents arrive: insurance, MOT history, service record, mileage, driver.
 
-### Vehicles 2 and 3
+### Ford Transit - second van (registration unconfirmed spelling)
 
-Not yet fully identified. Two candidates were checked in the bank statements and one was ruled
-out:
+**Confirmed as a genuine company van by the owner on 2026-09-12** ("This is one of our company
+vans. No issues with registration plate number" - written up in full at
+`Raw/2026-09-12_owner-note_vehicle-fct00020-confirmed-company-van.md`). This settles that it is
+a real Fishbone Construction vehicle and that the owner sees no registration problem; it does
+not itself say which of the two transcribed plates below is spelled correctly.
 
-- **Haydock Finance** (£1,210.16/month HP) looked vehicle-shaped from the payment pattern alone
-  but is **three woodworking machines**, confirmed against the Loans database. Not a vehicle.
-- **Tower Leasing** (£373, appearing once, August 2026 only) has no facility record anywhere in
-  the group Loans database. It may be a vehicle or may be unrelated equipment - unconfirmed.
-
-**A second Ford Transit is now documented, but its registration is unresolved.** Two documents
-arrived the same week (2026-09-10/11) naming what looks like the same vehicle under two
-different plates:
+Two documents arrived the same week (2026-09-10/11) naming what looks like the same vehicle
+under two different plates:
 
 - **MOT record, registration `NJ17CYK`** (`FCD0000025`, a scanned certificate uploaded directly
   to `Raw/`). Ford Transit, VIN `WFOZXXTTGZHU86918`. Test on 08.07.2026 at Advanced Wallsend
@@ -76,13 +74,25 @@ whether this is one vehicle read two different ways, or two distinct vehicles.**
 
 Full detail: `Raw/Vehicles/INDEX.md`.
 
+### Vehicle 3
+
+Not yet identified. Two candidates were checked in the bank statements and one was ruled out:
+
+- **Haydock Finance** (£1,210.16/month HP) looked vehicle-shaped from the payment pattern alone
+  but is **three woodworking machines**, confirmed against the Loans database. Not a vehicle.
+- **Tower Leasing** (£373, appearing once, August 2026 only) has no facility record anywhere in
+  the group Loans database. It may be a vehicle or may be unrelated equipment - unconfirmed.
+
 ## Open questions
 
-- **Is `NJ17CYK` (MOT) the same vehicle as `NJ17 CWK` (DVLA tax reminder), or two vehicles?**
-  Check against the V5C registration certificate or the insurance schedule before treating
-  either reading as correct. Whichever it resolves to, the vehicle needs re-taxing before
-  30 September 2026 (it has a valid MOT to do so, expiry 07.07.2027).
-- What and where is the (possible) third vehicle?
+~~**Is `NJ17CYK` (MOT) the same vehicle as `NJ17 CWK` (DVLA tax reminder), or two vehicles?**
+Check against the V5C registration certificate or the insurance schedule before treating either
+reading as correct.~~ **Answered 2026-09-12: it's one vehicle, a genuine company van** - the
+owner confirmed there's no registration issue. Kept visible per `CLAUDE.md` §6d rule 2. **Still
+open: which of the two transcribed plates (`NJ17CYK` or `NJ17 CWK`) is spelled correctly** -
+the owner's statement didn't restate the registration itself. Whichever it is, the vehicle
+needs re-taxing before 30 September 2026 (it has a valid MOT to do so, expiry 07.07.2027).
+- What and where is the third vehicle?
 - Is the Tower Leasing payment one of them?
 - Insurer and current keeper/finance arrangement for the second vehicle - not established from
   the MOT certificate or tax reminder alone (unlike vehicle 1, no hire-purchase facility for it
@@ -95,6 +105,7 @@ Full detail: `Raw/Vehicles/INDEX.md`.
 
 | Date | Change | Change-log ref |
 |---|---|---|
+| 2026-09-12 | Second vehicle confirmed as a genuine company van by the owner; registration-discrepancy question narrowed (one vehicle, exact plate spelling still open) | `Outputs/change-log-2026-09-12-vehicle-confirmed-company-van.md` |
 | 2026-09-11 | Second vehicle (Ford Transit) added from an MOT certificate and a DVLA tax reminder; registration discrepancy flagged, not resolved | `Outputs/change-log-2026-09-11-raw-check-vehicle-and-hse-handoff.md` |
 | 2026-09-09 | Created; workspace set up, one of three vehicles confirmed | `Outputs/change-log-2026-09-09-vehicle-workspace-created.md` |
 
@@ -102,3 +113,4 @@ Full detail: `Raw/Vehicles/INDEX.md`.
 
 [^1]: Owner statement, 2026-09-09 (conversational; not yet written up as a dated `Raw/` note - see Decisions article).
 [^2]: `Facility — MotoNovo Finance — Hire Purchase`, group Loans database Wiki, last updated 04/09/2026.
+[^3]: Owner statement, 2026-09-12 - `Raw/2026-09-12_owner-note_vehicle-fct00020-confirmed-company-van.md`.
